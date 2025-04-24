@@ -61,6 +61,25 @@ struct LandingView: View {
             .ignoresSafeArea()
         }
         .preferredColorScheme(isDarkMode ? .dark : .light)
+        
+        TabView {
+            Image(systemName: "house.fill")
+                .tabItem { Image(systemName: "house.fill") }
+
+            Image(systemName: "calendar")
+                .tabItem { Image(systemName: "calendar") }
+
+            Image(systemName: "magnifyingglass")
+                .tabItem { Image(systemName: "magnifyingglass") }
+
+            Image(systemName: "person.crop.circle")
+                .tabItem { Image(systemName: "person.crop.circle") }
+
+            Image(systemName: "gearshape.fill")
+                .tabItem { Image(systemName: "gearshape.fill") }
+        }
+        .frame(height: 60)
+        .tabViewStyle(DefaultTabViewStyle()) // Tu peux changer pour .page ou .automatic
     }
 }
 
