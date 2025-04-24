@@ -9,9 +9,14 @@ struct LandingView: View {
                 // Logo image
                 Image("iakoa")
                     .resizable()
+                    .renderingMode(.template)
+                    .foregroundColor(.blue)
                     .scaledToFit()
-                    .frame(width: 280, height: 280) // Taille réduite
-                    .padding(.top, 20)
+                    .frame(width: 380, height: 380)
+                    .padding(.top, -30)
+                    .padding(.bottom, 5)
+                    .opacity(0.9)
+
 
                 // Grille de catégories
                 LazyVGrid(columns: Array(repeating: GridItem(.flexible(), spacing: 16), count: 4), spacing: 20) {
@@ -28,7 +33,7 @@ struct LandingView: View {
                     CategoryButton(icon: "gamecontroller.fill", label: "Jeux Vidéo", color: .cyan)
                     CategoryButton(icon: "sportscourt", label: "Sport", color: .brown)
                 }
-                .padding(.horizontal)
+                .padding([.top], -90.0)
 
                 Spacer()
 
@@ -36,14 +41,16 @@ struct LandingView: View {
                 Button(action: {
                     // Action
                 }) {
-                    Text("Découvre les événements près de toi")
-                        .fontWeight(.semibold)
+                    Text("IAKOA près de chez toi ?")
+                        .font(.system(size: 22, weight: .bold, design: .rounded))
                         .frame(maxWidth: .infinity)
                         .padding()
                         .background(Color.blue)
                         .foregroundColor(.white)
                         .cornerRadius(15)
                         .padding(.horizontal)
+                        .opacity(0.9)
+                    
                 }
 
                 Spacer()
