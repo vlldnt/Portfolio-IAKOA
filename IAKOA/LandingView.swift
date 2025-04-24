@@ -13,15 +13,15 @@ struct LandingView: View {
                     .foregroundColor(.blue)
                     .scaledToFit()
                     .frame(width: 380, height: 380)
-                    .padding(.top, -30)
+                    .padding(.top, -80)
                     .padding(.bottom, 5)
                     .opacity(0.9)
 
 
                 // Grille de catégories
-                LazyVGrid(columns: Array(repeating: GridItem(.flexible(), spacing: 16), count: 4), spacing: 20) {
+                LazyVGrid(columns: Array(repeating: GridItem(.flexible(), spacing: 2), count: 4), spacing: 15) {
                     CategoryButton(icon: "music.note", label: "Concert", color: .red)
-                    CategoryButton(icon: "gamecontroller", label: "Enfants", color: .blue)
+                    CategoryButton(icon: "star.fill", label: "Enfants", color: .blue)
                     CategoryButton(icon: "sun.max", label: "Journée", color: .orange)
                     CategoryButton(icon: "wineglass", label: "Bar", color: .purple)
                     CategoryButton(icon: "sparkles", label: "Soirée", color: .pink)
@@ -64,22 +64,39 @@ struct LandingView: View {
         
         TabView {
             Image(systemName: "house.fill")
-                .tabItem { Image(systemName: "house.fill") }
+                .tabItem {
+                    Image(systemName: "house.fill")
+                    Text("Acceuil")
+                }
 
             Image(systemName: "calendar")
-                .tabItem { Image(systemName: "calendar") }
+                .tabItem {
+                    Image(systemName: "calendar")
+                    Text("Evènements")
+                }
 
-            Image(systemName: "magnifyingglass")
-                .tabItem { Image(systemName: "magnifyingglass") }
+            Image(systemName: "plus.circle")
+                .tabItem {
+                    Image(systemName: "plus.circle")
+                        .resizable()
+                        .frame(width: 70, height: 70)
+                        .scaleEffect(1.5)
+                    Text("Créer")
+                }
 
             Image(systemName: "person.crop.circle")
-                .tabItem { Image(systemName: "person.crop.circle") }
+                .tabItem {
+                    Image(systemName: "magnifyingglass")
+                    Text("Rechercher")
+                }
 
             Image(systemName: "gearshape.fill")
-                .tabItem { Image(systemName: "gearshape.fill") }
+                .tabItem {
+                    Image(systemName: "gearshape.fill")
+                    Text("Réglages")
+                }
         }
-        .frame(height: 60)
-        .tabViewStyle(DefaultTabViewStyle()) // Tu peux changer pour .page ou .automatic
+        .frame(height: 70)
     }
 }
 
