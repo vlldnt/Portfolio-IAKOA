@@ -10,12 +10,13 @@ struct CategoryButton: View {
             Image(systemName: icon)
                 .font(.title)
                 .padding()
-                .background(color.opacity(0.2))
+                .background(color.opacity(0.25))
                 .foregroundColor(color)
                 .clipShape(Circle())
             Text(label)
                 .font(.caption)
                 .foregroundColor(.primary)
+                .bold()
         }
     }
 }
