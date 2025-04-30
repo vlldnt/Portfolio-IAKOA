@@ -17,7 +17,8 @@
 
 ## 💡 **RESEARCH & BRAINSTORMING**
 
-Here the link to my mind mapping
+Here all the idea i have aroudn this project to develop an iOS Native App.
+**IAKOA** : Searching every events around you or found by city name from a concert to a market, in 16 differents categories
 
 [My Mind Mapping](https://mm.tt/map/3695052275?t=IkL1MvnEtu)
 
