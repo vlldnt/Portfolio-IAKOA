@@ -35,3 +35,41 @@ Here all the idea i have aroudn this project to develop an iOS Native App.
 | 🌍 **Geolocation Management** | - Search by city or ZIP code. <br> - Built-in geolocation to find nearby events. <br> - New feature: Show a live map of nearby events based on your location |
 | ➕ **Additional Features**   | - Interactive Maps: Users can view and interact with a map showing the locations of events. <br> - Ticket Ordering: Directly purchase tickets through the app <br> - Event Reminders: Set push notifications for upcoming events you’re interested in. <br> - Event Sharing: Share events with friends via social media or messaging apps. <br> - Customizable Notifications: Choose the types of notifications you'd like to receive (e.g., new events in your city, favorite event updates) |
 | 🌟 **Advanced Features**    | - Advanced Search Filters: Filter by Date, Event Type, Price Range, and Event Popularity. <br> - Nearby Events Filter: Find events close to your location <br> - Personalized Recommendations: AI-powered suggestions based on user preferences and past behavior. <br> - Social Integration: Share events and see what your friends are attending <br> - Live Stream Events: Stream digital events (concerts, webinars) directly through the app <br> - User Ratings & Reviews: Rate and review events to guide other users |
+
+
+### Idea Evaluation & Prioritization Table
+
+| Feature                          | Feasibility | Impact | Tech Alignment | Scalability | Risk  | Total | Priority | Notes |
+|----------------------------------|-------------|--------|-----------------|-------------|-------|-------|----------|-------|
+| **🎯 Core App Purpose**          |             |        |                 |             |       |       |          |       |
+| Find events by location/search   | 5           | 5      | 5               | 5           | 1     | 21    | P0       | Essential MVP feature |
+| 16 event categories              | 5           | 4      | 5               | 5           | 1     | 20    | P0       | Low risk, high value |
+| No login for browsing            | 5           | 5      | 5               | 5           | 1     | 21    | P0       | Boosts user adoption |
+| **🔐 Account Management**        |             |        |                 |             |       |       |          |       |
+| User account creation/deletion   | 4           | 4      | 5               | 5           | 2     | 20    | P0       | GDPR compliance needed |
+| Verified creators (SIRET/SIREN)  | 3           | 5      | 4               | 4           | 3     | 19    | P1       | Fraud risk; manual verification |
+| **📜 GDPR Compliance**           | 4           | 5      | 5               | 5           | 1     | 20    | P0       | Legal requirement |
+| **💻 Technologies**              |             |        |                 |             |       |       |          |       |
+| Firebase Auth/Firestore          | 5           | 5      | 5               | 4           | 2     | 21    | P0       | Scalability costs to monitor |
+| Push Notifications               | 4           | 4      | 4               | 4           | 2     | 18    | P1       | Requires user permissions |
+| **🖥 iOS Native Features**       |             |        |                 |             |       |       |          |       |
+| Camera/Photos                   | 4           | 3      | 5               | 5           | 2     | 19    | P1       | For event creation |
+| Location Services               | 5           | 5      | 5               | 5           | 2     | 22    | P0       | Core to search functionality |
+| **🎨 UI/UX Design**              |             |        |                 |             |       |       |          |       |
+| Minimalistic interface          | 5           | 5      | 5               | 5           | 1     | 21    | P0       | Critical for adoption |
+| Light/Dark Mode                 | 5           | 4      | 5               | 5           | 1     | 20    | P1       | Easy with SwiftUI |
+| **📄 App Pages**                 |             |        |                 |             |       |       |          |       |
+| Home/Search Page               | 5           | 5      | 5               | 5           | 1     | 21    | P0       | Core UX |
+| Favorites Page (Logged-in)      | 4           | 4      | 5               | 5           | 2     | 20    | P1       | Requires auth |
+| **🌍 Geolocation**               |             |        |                 |             |       |       |          |       |
+| Live Map of Nearby Events      | 4           | 4      | 4               | 4           | 3     | 19    | P1       | API costs (Google/Apple Maps) |
+| **➕ Additional Features**        |             |        |                 |             |       |       |          |       |
+| Ticket Ordering                | 2           | 5      | 3               | 3           | 4     | 17    | P2       | High risk (payment compliance) |
+| **🌟 Advanced Features**         |             |        |                 |             |       |       |          |       |
+| AI Recommendations             | 2           | 3      | 2               | 3           | 4     | 14    | P3       | Data/privacy concerns |
+
+### Priority Legend
+- **P0 (Critical)**: MVP/core features
+- **P1 (High)**: Important enhancements  
+- **P2 (Medium)**: Nice-to-have features
+- **P3 (Low)**: Long-term/risky investments
