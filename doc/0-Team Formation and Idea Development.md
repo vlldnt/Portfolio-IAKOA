@@ -4,7 +4,7 @@
 
 - **Student:** Adrien VIEILLEDENT
 - **Team:** Solo project
-- **Role:** Solo developer (Analyse, Conception & Development, **Frontend** and **Backend**)
+- **Role:** Solo developer (Analysis, Design & Development, Frontend and Backend)
 - ### **Personal objectives:**
     - Learn new technologies related to an Apple app
     - Build a creative and potentially project
