@@ -136,7 +136,7 @@ Here you'll find a comprehensive evaluation of ideas based on feasibility, impac
 
 ---
 
-## Decision and Refinement 
+## 🧠 Decision and Refinement 
 
 ### MVP Features for IAKOA App
 
@@ -203,28 +203,28 @@ Here you'll find a comprehensive evaluation of ideas based on feasibility, impac
 
 ***
 
-### **App Description:**
+### 📱 **App Description:**
 IAKOA is an event discovery and management platform designed to make it easier for users to find and participate in events that match their interests and location. <br>
 The app helps event organizers create and manage their events while maintaining data security, user privacy, and GDPR compliance. <br>
 By providing real-time event suggestions based on location and personal preferences, IAKOA aims to be the go-to app for both users looking to attend events and organizers aiming to reach a wider audience.
 
 ***
 
-### **Problem Statement:**
+### ❗ **Problem Statement:**
 In today’s fast-paced world, people often struggle to find events that match their interests, location, and availability. Traditional event platforms are often cumbersome and lack personalization. Event organizers also face difficulties in reaching the right audience and managing their events securely.
 <br>
 IAKOA solves these problems by providing a seamless, user-friendly platform that allows users to easily discover events based on their location, interests, and social connections. Event organizers benefit from a streamlined platform to manage events and ensure the authenticity of their activities.
 
 ***
 
-### **Target Audience:**
+### 👥 **Target Audience:**
 **Event-Goers** of all types, including students, families, locals, and tourists, seeking activities that match their interests and schedules. Users can discover events based on categories, location, or keywords.
 <br>
 **Event Organizers:** Small to medium-sized event organizers, from local community leaders to large-scale event hosts, looking for a platform to manage, promote, and ensure the authenticity of their events.
 
 ***
 
-### **Key Features**
+### ⭐ **Key Features**
 1. Event Discovery
 2. User Accounts & Personalization
 3. Event Creation & Management
@@ -233,7 +233,7 @@ IAKOA solves these problems by providing a seamless, user-friendly platform that
 
 ***
 
-### **Key Challenges to Address:**
+### 🚀 **Key Challenges to Address:**
 1. Scalability and Performance:
 
     - As user activity and event listings grow, ensuring the app can handle increased traffic and data without compromising speed or reliability.
