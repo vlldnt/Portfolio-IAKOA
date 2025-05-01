@@ -37,7 +37,7 @@ Here all the idea i have aroudn this project to develop an iOS Native App.
 | 🌟 **Advanced Features**    | - Advanced Search Filters: Filter by Date, Event Type, Price Range, and Event Popularity. <br> - Nearby Events Filter: Find events close to your location <br> - Personalized Recommendations: AI-powered suggestions based on user preferences and past behavior. <br> - Social Integration: Share events and see what your friends are attending <br> - Live Stream Events: Stream digital events (concerts, webinars) directly through the app <br> - User Ratings & Reviews: Rate and review events to guide other users |
 
 
-### Idea Evaluation & Prioritization Table
+## 📌 **IDEA EVALUATION & PRIORITIZATION TABLE**
 
 **MVP (P0)🔴** These are the **essential features** required to make the application functional.
 
