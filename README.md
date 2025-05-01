@@ -7,10 +7,10 @@ By providing real-time event suggestions based on location and personal preferen
 
 ---
 
-## [Steps](https://github.com/vlldnt/iakoa/tree/main/doc) of the project
+## [Steps](https://github.com/vlldnt/Portfolio-IAKOA/tree/main/doc) of the project
 
 
 | Step |                                                                 Name                                                                  | Description                                                                                                         |
 | :--: | :-----------------------------------------------------------------------------------------------------------------------------------: | ------------------------------------------------------------------------------------------------------------------- |
-|  1   | [Team Formation and Idea Development](https://github.com/vlldnt/iakoa/blob/main/doc/0-Team%20Formation%20and%20Idea%20Development.md) | Brainstorming project ideas, evaluating feasibility, selecting an MVP, and documenting the decision-making process |
+|  1   | [Team Formation and Idea Development](https://github.com/vlldnt/Portfolio-IAKOA/blob/main/doc/0-Team%20Formation%20and%20Idea%20Development.md) | Brainstorming project ideas, evaluating feasibility, selecting an MVP, and documenting the decision-making process |
 |      |                                                                                                                                       |                                                                                                                     |
