@@ -1,8 +1,16 @@
-![IAKOA](https://i.ibb.co/39NpbqsR/Capture-d-e-cran-2025-04-30-a-15-27-05.png)
 
-### IAKOA – Discover Events Around You
+## <img src="https://i.ibb.co/prz5FVC4/logo-iakoa.png" height='25'/> IAKOA – Discover Events Around You
 
-  **IAKOA** is your local event finder, helping you discover what's happening nearby across **16 categories** including:
-  🎵 Concerts, 🎬 Cinema, 🛍️ Markets, 🧸 Kids Events, 🎡 Festivals, 🏅 Sports, and many more!</p>
+**IAKOA** is an event discovery and management platform designed to make it easier for users to find and participate in events that match their interests and location.
+The app helps event organizers create and manage their events while maintaining data security, user privacy, and GDPR compliance.
+By providing real-time event suggestions based on location and personal preferences, IAKOA aims to be the go-to app for both users looking to attend events and organizers aiming to reach a wider audience.
 
-  Whether you're looking for a fun outing this weekend or planning ahead, **IAKOA<** makes it easy to explore and join events in your area.
+---
+
+## Steps of the project
+
+
+| Step |                                                                 Name                                                                  | Description                                                                                                         |
+| :--: | :-----------------------------------------------------------------------------------------------------------------------------------: | ------------------------------------------------------------------------------------------------------------------- |
+|  1   | [Team Formation and Idea Development](https://github.com/vlldnt/iakoa/blob/main/doc/0-Team%20Formation%20and%20Idea%20Development.md) | Brainstorming project ideas, evaluating feasibility, selecting an MVP, and documenting the decision-making process |
+|      |                                                                                                                                       |                                                                                                                     |
