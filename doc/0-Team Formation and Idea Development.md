@@ -134,3 +134,116 @@ Here you'll find a comprehensive evaluation of ideas based on feasibility, impac
 | Ticket Ordering                                | Directly purchase tickets through the app                                                            |       4        |    4    | Payment processing must be secure to protect user financial data                                                    |       🔵       |
 
 
+---
+
+## Decision and Refinement 
+
+### MVP Features for IAKOA App
+
+**Core Functionality**
+
+- Allow users to find events based on location or keywords for easy accessibility.
+- Implement 16 different categories to help users find events that match their interests.
+- Enable users to browse events without logging in, reducing friction and improving user experience.
+- Automatically detect and use the user's location on app startup to provide relevant event suggestions.
+
+**Account Management**
+
+- Provide the ability to create a user account for personalized features and event creation.
+- Offer an option to register as a creator account, enabling event hosting and management.
+- Allow users to delete their accounts, ensuring compliance with data protection regulations.
+- Implement verification via SIREN/SIRET/Association number (API-based) to ensure the authenticity of event creators.
+- Restrict event creation to logged-in, verified creators to maintain quality and security.
+
+**GDPR Compliance**
+
+- Obtain user consent for any data collected, ensuring transparency and compliance with GDPR.
+- Provide a clear and concise privacy policy to inform users about data usage and protection.
+- Enable users to access, modify, and delete their data, empowering them with control over their information.
+- Store data securely and for no longer than necessary, adhering to GDPR guidelines.
+- Implement encryption and secure data storage to protect user information from breaches.
+- Ensure all third parties are GDPR-compliant to maintain data protection standards.
+
+**Technology Stack**
+
+- Use Swift for native iOS programming to ensure high performance and a seamless user experience.
+- Utilize SwiftUI for building the app's user interface, leveraging its modern and efficient framework.
+- Implement Firebase Authentication for secure user authentication and management.
+- Use Cloud Firestore as the NoSQL database for scalable and flexible data storage.
+
+**iOS Native Features**
+
+- Enable users to create events and add pictures using the device's camera or photo library.
+- Utilize native iOS geolocation services to provide accurate and relevant event suggestions.
+
+**Testing & Debugging**
+
+- Implement unit tests using XC Test to ensure the reliability and functionality of the app.
+- Use XCode for development and GitHub for code management and debugging, ensuring a streamlined development process.
+
+**UI/UX Design**
+
+- Design a simple and intuitive navigation system to ensure a smooth user experience.
+- Allow users to easily filter events by categories, enhancing the discovery process.
+- Provide quick navigation to key sections of the app, ensuring easy access to all features.
+
+**App Pages**
+
+- Allow users to search for events based on location using either city name or ZIP code.
+- Enable users to filter events by one of 16 predefined categories.
+- Automatically detect and use the user's current location to display nearby events.
+- Allow logged-in users to save events to their favorites for easy access later.
+- Show a list of events the user has marked as favorites for quick reference.
+- Require users to log in or create an account to add a new event.
+- Provide a straightforward form to enter event details like name, location, date, price, and more.
+- Display the user’s account information, including personal details and activity history.
+- Allow users to update their personal information, such as name, email, and preferences.
+- Enable users to modify their app preferences, such as notification settings, privacy, and display options.
+- Provide an option for users to permanently delete their account and all personal data from the app.
+
+***
+
+### **App Description:**
+IAKOA is an event discovery and management platform designed to make it easier for users to find and participate in events that match their interests and location. <br>
+The app helps event organizers create and manage their events while maintaining data security, user privacy, and GDPR compliance. <br>
+By providing real-time event suggestions based on location and personal preferences, IAKOA aims to be the go-to app for both users looking to attend events and organizers aiming to reach a wider audience.
+
+***
+
+### **Problem Statement:**
+In today’s fast-paced world, people often struggle to find events that match their interests, location, and availability. Traditional event platforms are often cumbersome and lack personalization. Event organizers also face difficulties in reaching the right audience and managing their events securely.
+<br>
+IAKOA solves these problems by providing a seamless, user-friendly platform that allows users to easily discover events based on their location, interests, and social connections. Event organizers benefit from a streamlined platform to manage events and ensure the authenticity of their activities.
+
+***
+
+### **Target Audience:**
+**Event-Goers** of all types, including students, families, locals, and tourists, seeking activities that match their interests and schedules. Users can discover events based on categories, location, or keywords.
+<br>
+**Event Organizers:** Small to medium-sized event organizers, from local community leaders to large-scale event hosts, looking for a platform to manage, promote, and ensure the authenticity of their events.
+
+***
+
+### **Key Challenges to Address:**
+1. Scalability and Performance:
+
+    - As user activity and event listings grow, ensuring the app can handle increased traffic and data without compromising speed or reliability.
+
+    - Implementing efficient search and filtering mechanisms to provide quick results even with a growing database of events.
+
+2. User Engagement & Retention:
+
+    - Maintaining user interest by offering personalized content without overwhelming them with too many notifications.
+
+    - Encouraging users to consistently return to the app by providing a dynamic event feed, relevant recommendations, and regular updates on new events.
+
+3. Security and Data Privacy:
+
+    - Ensuring full GDPR compliance, especially in handling user data securely.
+
+    - Managing user trust by maintaining a strict verification process for event creators and ensuring transparency in data usage.
+
+4. Event Quality Control:
+
+    - Developing a reliable verification process for event creators to prevent fraudulent or low-quality events from being listed.
+
