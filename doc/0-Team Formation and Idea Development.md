@@ -40,8 +40,11 @@ Here all the idea i have aroudn this project to develop an iOS Native App.
 ### Idea Evaluation & Prioritization Table
 
 **MVP (P0)🔴** These are the **essential features** required to make the application functional.
+
 **Important (P1)🟡** These features are important for **enhancing the user experience**, but they are not critical
+
 **Optional (P2)🟣** These are **secondary features** that can be added **after the initial launch**. They are useful, but not necessary
+
 **Future (P3)🔵** These features are for the **long-term roadmap** and should be integrated after the app has gained traction and other higher priority features have been completed
 
 | ***Feature***                                  | ***Notes***                                                                                          | ***Priority*** |
