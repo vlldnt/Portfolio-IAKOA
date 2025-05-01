@@ -18,17 +18,18 @@
 
 ## 💡 **RESEARCH & BRAINSTORMING**
 
-Here all the idea i have aroudn this project to develop an iOS Native App.
-**IAKOA** : Searching every events around you or found by city name from a concert to a market, in 16 differents categories
+Here are all the ideas I've outlined for developing an iOS native app:
 
-[My Mind Mapping](https://mm.tt/map/3695052275?t=IkL1MvnEtu)
+**IAKOA**: Explore events near you or by city name, ranging from concerts to markets, across multiple categories.
+
+[My Mind Mapping :](https://mm.tt/map/3695052275?t=IkL1MvnEtu)
 
 | **Section**                 | **Details**                                                                                                                                          |
 |-----------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 🎯 **App Purpose**             | - Find events by location or search. <br> - 16 event categories available (Concerts, Theater, etc.). <br> - No login required for users. <br> - But Login needed to add favorite events |
 | 🔐 **Account Creation & Deletion & Login** | - User account creation required. <br> - Account deletion possibility <br> - Login needed to create an event. <br> - Creator account creation available. <br> - Verified creators (SIREN/SIRET/Associations). |
 | 📜 **GDPR Compliance**      | The app complies with GDPR (General Data Protection Regulation) rules""                                                                              |
-| 💻 **Technologies**         | **Frontend:** <br> - Swift for iOS <br> - SwiftUI, Views, Modifiers, NavigationStack / NavigationLink"" <br> **Backend:** <br> - Firebase Auth, Cloud Firestore (noSQL). <br> - Push Notifications (APNs, Firebase Messaging). |
+| 💻 **Technologies**         | **Frontend:** <br> - Swift for iOS <br> - SwiftUI, Views, Modifiers, NavigationStack / NavigationLink <br> **Backend:** <br> - Firebase Auth, Cloud Firestore (noSQL). <br> - Push Notifications (APNs, Firebase Messaging). |
 | 🖥 **iOS Native Features**  | - Native iOS features such as: <br> - Camera / Photos <br> - Location Services                                                                     |
 | 🧪 **Testing & Debugging**  | - Unit tests using XC Test <br> - XCode and GitHub for code management and debugging.                                                              |
 | 🎨 **UI/UX Design**         | - Minimalistic interface for easy navigation. <br> - Category-based event filtering. <br> - Smooth page transitions. <br> - 5-tab menu for easy access <br> - Light & Dark Modes: Toggle between light and dark mode for user preference <br> - Smooth Animations: Seamless transitions between pages for a smoother experience. <br> - Event Previews: Quick view of event details (name, time, location, price) in a compact format |
@@ -42,13 +43,13 @@ Here all the idea i have aroudn this project to develop an iOS Native App.
 
 ## 📌 **IDEA EVALUATION & PRIORITIZATION TABLE**
 
-**MVP (P0)🔴** These are the **essential features** required to make the application functional.
+Here you'll find a comprehensive evaluation of ideas based on feasibility, impact, technical alignment, scalability, and associated risks.
 
-**Important (P1)🟡** These features are important for **enhancing the user experience**, but they are not critical
-
-**Optional (P2)🟣** These are **secondary features** that can be added **after the initial launch**. They are useful, but not necessary
-
-**Future (P3)🔵** These features are for the **long-term roadmap** and should be integrated after the app has gained traction and other higher priority features have been completed
+### **Prioritization**:
+- **MVP (P0)🔴** These are the **essential features** required to make the application functional.
+- **Important (P1)🟡** These features are important for **enhancing the user experience**, but they are not critical
+- **Optional (P2)🟣** These are **secondary features** that can be added **after the initial launch**. They are useful, but not necessary
+- **Future (P3)🔵** These features are for the **long-term roadmap** and should be integrated after the app has gained traction and other higher priority features have been completed
 
 
 | ***Feature***                                  | ***Notes***                                                                                          | Feasibility /5 | Risk /5 | Justification                                                                                                       | ***Priority*** |
