@@ -22,7 +22,9 @@ Here are all the ideas I've outlined for developing an iOS native app:
 
 **IAKOA**: Explore events near you or by city name, ranging from concerts to markets, across multiple categories.
 
-[My Mind Mapping :](https://mm.tt/map/3695052275?t=IkL1MvnEtu)
+👉 Click here [Mind Mapping](https://mm.tt/map/3695052275?t=IkL1MvnEtu) to view a more visually structured mind map
+
+
 
 | **Section**                 | **Details**                                                                                                                                          |
 |-----------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
