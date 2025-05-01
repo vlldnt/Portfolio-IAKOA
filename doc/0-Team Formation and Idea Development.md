@@ -14,6 +14,7 @@
     - *Firebase* Backend & Database
     - *CoreLocalisation* (iOS API for GPS location)
 
+---
 
 ## 💡 **RESEARCH & BRAINSTORMING**
 
@@ -35,6 +36,8 @@ Here all the idea i have aroudn this project to develop an iOS Native App.
 | 🌍 **Geolocation Management** | - Search by city or ZIP code. <br> - Built-in geolocation to find nearby events. <br> - New feature: Show a live map of nearby events based on your location |
 | ➕ **Additional Features**   | - Interactive Maps: Users can view and interact with a map showing the locations of events. <br> - Ticket Ordering: Directly purchase tickets through the app <br> - Event Reminders: Set push notifications for upcoming events you’re interested in. <br> - Event Sharing: Share events with friends via social media or messaging apps. <br> - Customizable Notifications: Choose the types of notifications you'd like to receive (e.g., new events in your city, favorite event updates) |
 | 🌟 **Advanced Features**    | - Advanced Search Filters: Filter by Date, Event Type, Price Range, and Event Popularity. <br> - Nearby Events Filter: Find events close to your location <br> - Personalized Recommendations: AI-powered suggestions based on user preferences and past behavior. <br> - Social Integration: Share events and see what your friends are attending <br> - Live Stream Events: Stream digital events (concerts, webinars) directly through the app <br> - User Ratings & Reviews: Rate and review events to guide other users |
+
+---
 
 
 ## 📌 **IDEA EVALUATION & PRIORITIZATION TABLE**
