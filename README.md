@@ -2,7 +2,7 @@
 ## <img src="https://i.ibb.co/prz5FVC4/logo-iakoa.png" height='25'/> IAKOA – Discover Events Around You
 
 **IAKOA** is an event discovery and management platform designed to make it easier for users to find and participate in events that match their interests and location.
-The app helps event organizers create and manage their events while maintaining data security, user privacy, and GDPR compliance.
+<br>The app helps event organizers create and manage their events while maintaining data security, user privacy, and GDPR compliance.<br>
 By providing real-time event suggestions based on location and personal preferences, IAKOA aims to be the go-to app for both users looking to attend events and organizers aiming to reach a wider audience.
 
 ---
