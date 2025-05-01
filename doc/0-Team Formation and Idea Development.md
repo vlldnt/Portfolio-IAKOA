@@ -224,6 +224,15 @@ IAKOA solves these problems by providing a seamless, user-friendly platform that
 
 ***
 
+### **Key Features**
+1. Event Discovery
+2. User Accounts & Personalization
+3. Event Creation & Management
+4. GDPR Compliance & Data Privacy
+5. User-Friendly Interface
+
+***
+
 ### **Key Challenges to Address:**
 1. Scalability and Performance:
 
