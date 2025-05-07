@@ -74,7 +74,19 @@ $${\color{Yellow}\text{---}}$$
 | **Live Stream Events**                               | Stearm digital events not included |
 
 
-# High-Level Plan
+# ⚠️ Risks
+
+| $$\text{\color{red}{Risk}}$$:                                       | $$\text{\color{red}{Mitigation strategy}}$$:                                                             |
+| :-----------------------------------------------------------------: | -------------------------------------------------------------------------------------------------------- |
+| Lack of experience with iOS tools                                   | Allocate time in Week 1 for tutorials, set up shared resources, and encourage peer support               |
+| Geolocation feature fails or lacks accuracy                         | Use trusted APIs like Apple Core Location; allow fallback input (manual location search)                 |
+| Delays in MVP development due to underestimation of task complexity | Break down tasks into weekly goals, review progress frequently, prioritize MVP features over extras      |
+| No reliable data source for local events                            | Prepare sample data in JSON format; later connect to Firebase or an external API                         |
+| Lack of user feedback before deadline                               | Conduct Alpha testing by end of Week 4; gather early feedback via TestFlight or informal user demos      |
+
+
+
+# 📊 High-Level Plan
 
 ![timeline](https://github.com/vlldnt/Portfolio-IAKOA/blob/main/doc/images/Timeline.png?raw=true)
 *Click for more details*
@@ -133,3 +145,6 @@ $${\color{Yellow}\text{---}}$$
 - Landing Page Creation  
 
 </details>
+
+
+© Adrien Vieilledent - c25 Holberton School - <img src="https://cdn.prod.website-files.com/6105315644a26f77912a1ada/63eea844ae4e3022154e2878_Holberton-p-800.png" width="150" />
