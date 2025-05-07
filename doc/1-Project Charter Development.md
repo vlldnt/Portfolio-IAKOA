@@ -77,11 +77,59 @@ $${\color{Yellow}\text{---}}$$
 # High-Level Plan
 
 ![timeline](https://github.com/vlldnt/Portfolio-IAKOA/blob/main/doc/images/Timeline.png?raw=true)
+*Click for more details*
+<details>
+<summary> 📅 <strong>Week 1:</strong> Team Formation and Idea Development</summary>
 
-    - Week 1 (21/04 - 02/05): Team Formation and Idea Development
-    - Week 2-3 (05/05 - 16/05): Project Charter Development
-    - Week 4-5 (19/05 - 30/05): Technical Documentation
-    - Week 6-9 (02/06 - 27/06): MVP Development & Execution
-    - Week 10 (30/06): Project Closure
-    - Week 11 (18/07): Landing Page Creation
-    
+- Team Formation  
+- Research and Brainstorming  
+- Idea Evaluation  
+<strong>- Decision and Refinement  </strong>
+- Documentation  
+
+</details>
+
+<details>
+<summary>📘 <strong>Week 2-3:</strong> Project Charter Development</summary>
+
+- Project Objectives  
+- Stakeholders and Roles  
+- Scope  
+- Risks  
+- High-Level Plan  
+- Documentation  
+
+</details>
+
+<details>
+<summary>📐 <strong>Week 4-5:</strong> Technical Documentation</summary>
+
+- High-Level Package Diagram  
+- Detailed Class Diagram for Business Logic Layer  
+- Sequence Diagrams for API Calls  
+- Documentation  
+
+</details>
+
+<details>
+<summary>🛠️ <strong>Week 6-9:</strong> MVP Development & Execution</summary>
+
+- Business Logic and API Endpoints  
+- Backend with Authentication and Database Integration  
+- Front-end (UI)  
+
+</details>
+
+<details>
+<summary>✅ <strong>Week 10</strong>: Project Closure</summary>
+
+- Project Closure  
+
+</details>
+
+<details>
+<summary>🌐 <strong>Week 11</strong>: Landing Page Creation</summary>
+
+- Landing Page Creation  
+
+</details>
