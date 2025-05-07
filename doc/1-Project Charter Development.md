@@ -84,7 +84,7 @@ $${\color{Yellow}\text{---}}$$
 - Team Formation  
 - Research and Brainstorming  
 - Idea Evaluation  
-<strong>- Decision and Refinement  </strong>
+- Decision and Refinement
 - Documentation  
 
 </details>
