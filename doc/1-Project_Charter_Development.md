@@ -148,4 +148,6 @@ $${\color{Yellow}\text{---}}$$
 
 ---
 
+<img src="https://raw.githubusercontent.com/vlldnt/Portfolio-IAKOA/72ed5c45476e26df252f76b8849d7b2d625054d6/doc/images/iakoa-upper-case.svg" height='150'/>
+
 © Adrien Vieilledent - c25 Holberton School - <img src="https://cdn.prod.website-files.com/6105315644a26f77912a1ada/63eea844ae4e3022154e2878_Holberton-p-800.png" width="100" />
