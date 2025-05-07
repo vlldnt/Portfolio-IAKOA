@@ -76,7 +76,7 @@ $${\color{Yellow}\text{---}}$$
 
 # ⚠️ Risks
 
-| $$\text{\color{red}{Risk}}$$:                                       | $$\text{\color{red}{Mitigation strategy}}$$:                                                             |
+| $$\text{\color{red}{Risk}}$$:                                       | $$\text{\color{yellow}{Mitigation strategy}}$$:                                                             |
 | :-----------------------------------------------------------------: | -------------------------------------------------------------------------------------------------------- |
 | Lack of experience with iOS tools                                   | Allocate time in Week 1 for tutorials, set up shared resources, and encourage peer support               |
 | Geolocation feature fails or lacks accuracy                         | Use trusted APIs like Apple Core Location; allow fallback input (manual location search)                 |
@@ -146,5 +146,6 @@ $${\color{Yellow}\text{---}}$$
 
 </details>
 
+---
 
 © Adrien Vieilledent - c25 Holberton School - <img src="https://cdn.prod.website-files.com/6105315644a26f77912a1ada/63eea844ae4e3022154e2878_Holberton-p-800.png" width="150" />
