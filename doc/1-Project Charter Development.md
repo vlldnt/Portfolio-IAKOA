@@ -76,7 +76,7 @@ $${\color{Yellow}\text{---}}$$
 
 # High-Level Plan
 
-![Aperçu de l'application](https://github.com/vlldnt/Portfolio-IAKOA/blob/main/doc/images/projectObjectives.png?raw=true)
+![timeline](https://github.com/vlldnt/Portfolio-IAKOA/blob/main/doc/images/Timeline.png?raw=true)
 
     - Week 1 (21/04 - 02/05): Team Formation and Idea Development
     - Week 2-3 (05/05 - 16/05): Project Charter Development
