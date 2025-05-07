@@ -40,24 +40,33 @@ $${\color{Yellow}\text{---}}$$
 
 ### **Solo Developer**:
 
-- Responsible for the entire development process, including coding, testing, and deployment<br>
-- Creates the user interface and visual elements of the app <br>
-- Manages project timelines, feature implementation, and bug fixes<br>
+- Responsible for the entire development process, including coding, testing, and deployment, front and bacn end
+- Creates the user interface and visual elements of the app
+- Manages project timelines, feature implementation, and bug fixes
 - Ensures the app meets quality standards and user expectations
 
 # 🔍 Scope
 
-### ✅ **In scope**: 
-- **User geolocation:** *Detect and use the user's location to display nearby events*
-- **Local search by typing city name:** *Users can manually enter a city to find events there*
-- **Basic categories filtering:** *Exemple: Concert, Child activity, Sport, ...*
-- **Local event list display:** *Dynamically show events based on user's position*
-- **Event detail page:** *Include event name, time/date, description, location, category, image*
-- **Profile/Event Management:** *User profiles or events management features (such as creating, editing, or managing events)*
-- **iPhone-Optimized Responsive Design:** *Layout works well on iPhone 13 and up*
-- **Simple and intuitive UI:** *Clean navigation between event list, details, favorite, profile, settings*
-- **Simple Backend:** *Using Firebase as the backend users cr*
-- **Testing:** *A functional build is required*
+| ✅ **In Scope**                                      | Description |
+|------------------------------------------------------|-------------|
+| **User geolocation**                                 | Detect and use the user's location to display nearby events |
+| **Local search by typing city name**                 | Users can manually enter a city to find events there |
+| **Basic categories filtering**                       | Exemple: Concert, Child activity, Sport, ... |
+| **Local event list display**                         | Dynamically show events based on user's position |
+| **Event detail page**                                | Include event name, time/date, description, location, category, image |
+| **Profile/Event Management**                         | User profiles or events management features (such as creating, editing, or managing events) |
+| **iPhone-Optimized Responsive Design**               | Layout works well on iPhone 13 and up |
+| **Simple and intuitive UI**                          | Clean navigation between event list, details, favorite, profile, settings |
+| **Simple Backend**                                   | Using Firebase as the backend |
+| **Testing**                                          | A functional build is required |
 
-### 🔄 **Out of scope**:
-- **In-App Ticket Purchasing:** *Users will not be able to buy tickets for events directly from the app*
+| 🔄 **Out of Scope**                                  | Description |
+|------------------------------------------------------|-------------|
+| **In-App Ticket Purchasing**                         | Users will not be able to buy tickets for events directly from the app |
+| **Social Media Integration**                         | Features like sharing events on social media or social media logins are not included |
+| **Language change**                                  | Ability to change language not included |
+| **User & Event reviews**                             | In the future this feature could be available |
+| **Advanced search event**                            | Filter by Date, Price Range, Event Popularity in the future features |
+| **Event reminders**                                  | Set push notification for upcoming event |
+| **Ticket ordering**                                  | Direct purchase tickets through the app |
+| **Personalized Recommendations**                     | AI-powered suggestions based on user preferences and past behavior |
