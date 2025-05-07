@@ -9,7 +9,7 @@
     IAKOA is an iOS app that helps users discover local events. <br>It features a location-based search and event category, an intuitive interface, and a verified account option for creators.
     
     ⏳ Track progress through milestones:
-    - Week 1b(21/04 - 02/05): Team Formation and Idea Development
+    - Week 1 (21/04 - 02/05): Team Formation and Idea Development
     - Week 2-3 (05/05 - 16/05): Project Charter Development
     - Week 4-5 (19/05 - 30/05): Technical Documentation
     - Week 6-9 (02/06 - 27/06): MVP Development & Execution
@@ -72,3 +72,16 @@ $${\color{Yellow}\text{---}}$$
 | **Ticket ordering**                                  | Direct purchase tickets through the app |
 | **Personalized Recommendations**                     | AI-powered suggestions based on user preferences and past behavior |
 | **Live Stream Events**                               | Stearm digital events not included |
+
+
+# High-Level Plan
+
+![Aperçu de l'application](https://github.com/vlldnt/Portfolio-IAKOA/blob/main/doc/images/projectObjectives.png?raw=true)
+
+    - Week 1 (21/04 - 02/05): Team Formation and Idea Development
+    - Week 2-3 (05/05 - 16/05): Project Charter Development
+    - Week 4-5 (19/05 - 30/05): Technical Documentation
+    - Week 6-9 (02/06 - 27/06): MVP Development & Execution
+    - Week 10 (30/06): Project Closure
+    - Week 11 (18/07): Landing Page Creation
+    
