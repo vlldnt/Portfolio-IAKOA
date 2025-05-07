@@ -59,6 +59,7 @@ $${\color{Yellow}\text{---}}$$
 | **Simple and intuitive UI**                          | Clean navigation between event list, details, favorite, profile, settings |
 | **Simple Backend**                                   | Using Firebase as the backend |
 | **Testing**                                          | A functional build is required |
+| **Landing Page**                                     | Create a project landing page |
 
 | 🔄 **Out of Scope**                                  | Description |
 |------------------------------------------------------|-------------|
@@ -70,3 +71,4 @@ $${\color{Yellow}\text{---}}$$
 | **Event reminders**                                  | Set push notification for upcoming event |
 | **Ticket ordering**                                  | Direct purchase tickets through the app |
 | **Personalized Recommendations**                     | AI-powered suggestions based on user preferences and past behavior |
+| **Live Stream Events**                               | Stearm digital events not included |
