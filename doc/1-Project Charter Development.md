@@ -1,6 +1,6 @@
 # <img src="https://i.ibb.co/prz5FVC4/logo-iakoa.png" height='40'/> Project Charted Development <img src="https://i.ibb.co/prz5FVC4/logo-iakoa.png" height='40'/> 
 
-# $$\color{Blue}\text{Project Objectives}$$
+# Project Objectives
 ![Aperçu de l'application](https://github.com/vlldnt/Portfolio-IAKOA/blob/main/doc/images/projectObjectives.png?raw=true)
 
 <details>
@@ -27,7 +27,7 @@
 </details>
 
 
-# $${\color{Blue}\text{Stakeholders and Team Roles}}$$
+# Stakeholders and Team Roles
 
 ### **General Users:** 
 - Individuals who use the app to discover local events
