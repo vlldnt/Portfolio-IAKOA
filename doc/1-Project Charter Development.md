@@ -1,9 +1,7 @@
 # <img src="https://i.ibb.co/prz5FVC4/logo-iakoa.png" height='40'/> Project Charted Development <img src="https://i.ibb.co/prz5FVC4/logo-iakoa.png" height='40'/> 
 
-# [$$\color{Blue}\text{Project Objectives}$$](https://i.ibb.co/Hpb4Lrdr/Capture-d-e-cran-2025-05-07-a-11-10-58.png)
-
-![Aperçu de l'application](https://i.ibb.co/Hpb4Lrd/Capture-d-e-cran-2025-05-07-a-11-10-58.png)
-
+# $$\color{Blue}\text{Project Objectives}$$
+![Aperçu de l'application](https://i.ibb.co/Hpb4Lrdr/Capture-d-e-cran-2025-05-07-a-11-10-58.png)
 
 <details>
 
