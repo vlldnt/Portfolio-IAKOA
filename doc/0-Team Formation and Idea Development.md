@@ -259,4 +259,4 @@ IAKOA solves these problems by providing a seamless, user-friendly platform that
 
 ---
 
-© Adrien Vieilledent - c25 Holberton School - <img src="https://cdn.prod.website-files.com/6105315644a26f77912a1ada/63eea844ae4e3022154e2878_Holberton-p-800.png" width="150" />
+© Adrien Vieilledent - c25 Holberton School - <img src="https://cdn.prod.website-files.com/6105315644a26f77912a1ada/63eea844ae4e3022154e2878_Holberton-p-800.png" width="100" />
