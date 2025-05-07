@@ -1,6 +1,6 @@
 # <img src="https://i.ibb.co/prz5FVC4/logo-iakoa.png" height='40'/> Project Charted Development <img src="https://i.ibb.co/prz5FVC4/logo-iakoa.png" height='40'/> 
 
-# Project Objectives
+# 🎯 Project Objectives
 ![Aperçu de l'application](https://github.com/vlldnt/Portfolio-IAKOA/blob/main/doc/images/projectObjectives.png?raw=true)
 
 <details>
@@ -27,7 +27,7 @@
 </details>
 
 
-# Stakeholders and Team Roles
+# 📌 Stakeholders and Team Roles
 
 ### **General Users:** 
 - Individuals who use the app to discover local events
@@ -36,7 +36,7 @@
 ### **Professional Users:** 
 - Professionals who use the app to gain visibility for their events or services
 
-$${\color{Yellow}\text{---}}$$ 
+$${\color{Yellow}\text{---}}$$
 
 ### **Solo Developer**:
 
@@ -45,3 +45,19 @@ $${\color{Yellow}\text{---}}$$
 - Manages project timelines, feature implementation, and bug fixes<br>
 - Ensures the app meets quality standards and user expectations
 
+# 🔍 Scope
+
+### ✅ **In scope**: 
+- **User geolocation:** *Detect and use the user's location to display nearby events*
+- **Local search by typing city name:** *Users can manually enter a city to find events there*
+- **Basic categories filtering:** *Exemple: Concert, Child activity, Sport, ...*
+- **Local event list display:** *Dynamically show events based on user's position*
+- **Event detail page:** *Include event name, time/date, description, location, category, image*
+- **Profile/Event Management:** *User profiles or events management features (such as creating, editing, or managing events)*
+- **iPhone-Optimized Responsive Design:** *Layout works well on iPhone 13 and up*
+- **Simple and intuitive UI:** *Clean navigation between event list, details, favorite, profile, settings*
+- **Simple Backend:** *Using Firebase as the backend users cr*
+- **Testing:** *A functional build is required*
+
+### 🔄 **Out of scope**:
+- **In-App Ticket Purchasing:** *Users will not be able to buy tickets for events directly from the app*
