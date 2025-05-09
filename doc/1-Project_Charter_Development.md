@@ -3,6 +3,10 @@
 # 🎯 Project Objectives
 ![Aperçu de l'application](https://github.com/vlldnt/Portfolio-IAKOA/blob/main/doc/images/projectObjectives.png?raw=true)
 
+Here the first UI Design :
+
+![First UI Design](https://github.com/vlldnt/Portfolio-IAKOA/blob/main/doc/images/first_UI_design.png?raw=true)
+
 <details>
 
     📱App Goal
