@@ -78,7 +78,7 @@ $${\color{Yellow}\text{---}}$$
 
 | $$\text{\color{red}{Risk}}$$:                                       | $$\text{\color{yellow}{Mitigation strategy}}$$:                                                             |
 | :-----------------------------------------------------------------: | -------------------------------------------------------------------------------------------------------- |
-| Lack of experience with iOS tools                                   | Allocate time in Week 1 for tutorials, set up shared resources, and encourage peer support               |
+| Lack of experience with iOS tools                                   | Allocate time in Week 1 for tutorials, set up shared resources, and first lines of code for the basis app               |
 | Geolocation feature fails or lacks accuracy                         | Use trusted APIs like Apple Core Location; allow fallback input (manual location search)                 |
 | Delays in MVP development due to underestimation of task complexity | Break down tasks into weekly goals, review progress frequently, prioritize MVP features over extras      |
 | No reliable data source for local events                            | Prepare sample data in JSON format; later connect to Firebase or an external API                         |
