@@ -5,7 +5,7 @@
 
 Here the first UI Design :
 
-![First UI Design](https://github.com/vlldnt/Portfolio-IAKOA/blob/main/doc/images/first_UI_design.png?raw=true)
+![First UI Design](https://github.com/vlldnt/Portfolio-IAKOA/blob/main/doc/images/ui_v1.png?raw=true)
 
 <details>
 

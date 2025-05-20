@@ -44,3 +44,7 @@
 | Normal User   | Event reminders will not be available                                                                                                          | Won’t Have  |
 | Normal User   | Personalized recommendations will not be available                                                                                             | Won’t Have  |
 | Normal User   | Live streaming will not be available                                                                                                           | Won’t Have  |
+
+## First UI Design :
+
+![First UI Design](https://github.com/vlldnt/Portfolio-IAKOA/blob/main/doc/images/ui_v2.png?raw=true)
