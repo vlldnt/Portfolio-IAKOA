@@ -22,19 +22,19 @@
 | **Backend**         | Developer       | As a developer, I want to use Firebase for backend management | Must Have |
 | **Testing**         | QA Tester       | As a QA tester, I want thorough testing for bug-free experience | Must Have |
 | **Marketing**       | Visitor         | As a visitor, I want a landing page explaining app features | Must Have |
-
+|       |   |   |
 | **Social**          | Normal User     | As a user, I want to search events by city name when not nearby | Should Have |
 | **Social**          | Normal User     | As a user, I want to share events on social media | Should Have |
 | **Verification**    | Event Creator   | As a creator, I want SIREN/SIRET verification for trust | Should Have |
 | **Reviews**         | Normal User     | As a user, I want to see event ratings and reviews | Should Have |
 | **Personalization** | Normal User     | As a user, I want event recommendations based on preferences | Should Have |
-
+|       |   |   |
 | **Advanced**        | Normal User     | As a user, I want a calendar view of events | Could Have |
 | **Advanced**        | Normal User     | As a user, I want personalized notifications | Could Have |
 | **Analytics**       | Event Creator   | As a creator, I want event performance analytics | Could Have |
 | **Communication**   | Normal User     | As a user, I want to message event organizers | Could Have |
 | **Trending**        | Normal User     | As a user, I want to see trending events | Could Have |
-
+|       |   |   |
 | **Non-Features**    | Normal User     | Ticket purchasing will not be available in-app | Won't Have |
 | **Non-Features**    | Normal User     | Social media login/integration not available | Won't Have |
 | **Non-Features**    | Normal User     | Single language support only | Won't Have |
