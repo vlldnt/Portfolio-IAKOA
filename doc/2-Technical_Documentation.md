@@ -19,25 +19,24 @@
 | Normal User   | As a user, I want to manage my profile information and preferences, so I can customize my experience                                           | Must Have   |
 | Normal User   | As a user, I want an iPhone-optimized app, so I can have a seamless experience                                                                 | Must Have   |
 | Normal User   | As a user, I want a simple, intuitive interface, so I can navigate easily                                                                      | Must Have   |
-| Normal User   | As a user, I want dark/light mode, so I can view comfortably at any time                                                                       | Must Have   |
 | Developer     | As a developer, I want to use Firebase for backend management, so I can build efficiently                                                      | Must Have   |
 | QA Tester     | As a QA tester, I want thorough testing, so the app is bug-free                                                                                | Must Have   |
 | Visitor       | As a visitor, I want a landing page explaining app features, so I understand its purpose                                                       | Must Have   |
 | $$\text{\color{orange}{Should Have}}$$:     |                                                       |  |
 | Normal User   | As a user, I want to search events by city name when not nearby, so I can plan ahead                                                           | Should Have |
+| Normal User   | As a user, I want personalized notifications, so I receive relevant alerts                                                                     | Should Have |
+| Normal User   | As a user, I want dark/light mode, so I can view comfortably at any time                                                                       | Should Have |
 | Normal User   | As a user, I want to share events on social media, so I can invite friends                                                                     | Should Have |
 | Event Creator | As a creator, I want SIREN/SIRET verification, so users trust my events                                                                        | Should Have |
-| Normal User   | As a user, I want to see event ratings and reviews, so I can assess quality                                                                    | Should Have |
-| Normal User   | As a user, I want event recommendations based on preferences, so I can discover relevant events                                                | Should Have |
 | $$\text{\color{yellow}{Could Have}}$$:      |                                                       |  |
-| Normal User   | As a user, I want a calendar view of events, so I can plan more effectively                                                                    | Could Have  |
-| Normal User   | As a user, I want personalized notifications, so I receive relevant alerts                                                                     | Could Have  |
 | Event Creator | As a creator, I want event performance analytics, so I can improve future events                                                               | Could Have  |
+| Normal User   | As a user, I want a calendar view of events, so I can plan more effectively                                                                    | Could Have  |
 | Normal User   | As a user, I want to message event organizers, so I can ask questions or get more info                                                         | Could Have  |
 | Normal User   | As a user, I want to see trending events, so I don’t miss popular activities                                                                   | Could Have  |
 | Normal User   | As a normal user, I want to see events on a map, so I can visualize their locations easily                                                     | Could Have  |
 | $$\text{\color{gray}{Won't Have}}$$:     |                                                       |  |
 | Normal User   | Ticket purchasing will not be available in-app                                                                                                 | Won't Have  |
+| Normal User   | As a user, I want event recommendations based on preferences, so I can discover relevant events                                                | Won't Have |
 | Normal User   | Social media login/integration will not be available                                                                                           | Won't Have  |
 | Normal User   | Multi language support only                                                                                                                   | Won’t Have  |
 | Normal User   | User reviews will not be available in this version                                                                                             | Won’t Have  |
