@@ -19,15 +19,17 @@
 | Normal User   | As a user, I want to manage my profile information and preferences, so I can customize my experience                                           | Must Have   |
 | Normal User   | As a user, I want an iPhone-optimized app, so I can have a seamless experience                                                                 | Must Have   |
 | Normal User   | As a user, I want a simple, intuitive interface, so I can navigate easily                                                                      | Must Have   |
+| Normal User | As a user, I want to delete my account permanently, so I can remove all my personal data from the app | Must Have |
+| Event Creator | As an event creator, I want to manage and delete my events, so I can keep my event list up-to-date and accurate | Must Have |
 | Developer     | As a developer, I want to use Firebase for backend management, so I can build efficiently                                                      | Must Have   |
 | QA Tester     | As a QA tester, I want thorough testing, so the app is bug-free                                                                                | Must Have   |
 | Visitor       | As a visitor, I want a landing page explaining app features, so I understand its purpose                                                       | Must Have   |
+| Event Creator | As a creator, I want SIREN/SIRET verification, so users trust my events                                                                        | Must Have |
 | $$\text{\color{orange}{Should Have}}$$:     |                                                       |  |
 | Normal User   | As a user, I want to search events by city name when not nearby, so I can plan ahead                                                           | Should Have |
 | Normal User   | As a user, I want personalized notifications, so I receive relevant alerts                                                                     | Should Have |
 | Normal User   | As a user, I want dark/light mode, so I can view comfortably at any time                                                                       | Should Have |
 | Normal User   | As a user, I want to share events on social media, so I can invite friends                                                                     | Should Have |
-| Event Creator | As a creator, I want SIREN/SIRET verification, so users trust my events                                                                        | Should Have |
 | $$\text{\color{yellow}{Could Have}}$$:      |                                                       |  |
 | Event Creator | As a creator, I want event performance analytics, so I can improve future events                                                               | Could Have  |
 | Normal User   | As a user, I want a calendar view of events, so I can plan more effectively                                                                    | Could Have  |
