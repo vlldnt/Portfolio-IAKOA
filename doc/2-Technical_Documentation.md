@@ -53,4 +53,47 @@
 
 ## Design System Architecture
 
-![IAKOA-Flowchart](https://github.com/vlldnt/Portfolio-IAKOA/blob/main/doc/images/diagram_IAKOA_flowchart.png?raw=true)
+```mermaid
+classDiagram
+
+class User {
+  id: String
+  nickname: String
+  email: String
+  password: String
+  createAt: Date
+  updateAt: Date
+}
+
+class Creator {
+  id: String
+  name: String
+  email: String
+  password: String
+  siren: String(9)
+  siret: String(14)
+  createAt: Date
+  updateAt: Date
+}
+
+class Event {
+  id: String
+  creatorId: String
+  name: String
+  description: String
+  location: String
+  pricing: Int
+  date: Date
+  facebookLink: String?
+  instagramLink: String?
+  tiktokLink: String?
+  youtubeLink: String?
+  xLink: String?
+  websiteLink: String?
+  createAt: Date
+  updateAt: Date
+}
+
+User --> Event : searches
+Creator --> Event : create / owns
+```
