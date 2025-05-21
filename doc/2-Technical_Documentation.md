@@ -61,6 +61,7 @@ class User {
   nickname: String
   email: String
   password: String
+  favoritesEvent: [String]
   createAt: Date
   updateAt: Date
 }
@@ -97,3 +98,96 @@ class Event {
 User --> Event : searches
 Creator --> Event : create / owns
 ```
+---
+### 👤 Detailed User Class
+
+#### Attributes
+| Name           | Type      | Description                            | Constraints                                    |
+| -------------- | --------- | -------------------------------------- | ---------------------------------------------- |
+| id             | String    | Unique identifier of the user          | Required, Unique                               |
+| nickname       | String    | User's nickname                        | Required                                       |
+| email          | String    | User's email address                   | Required, Unique, Must be a valid email format |
+| password       | String    | User's password                        | Required, Must be encrypted                    |
+| favoritesEvent | \[String] | List of favorite event identifiers     | Can be empty                                   |
+| createAt       | Date      | Date the user account was created      | Required, Automatically generated              |
+| updateAt       | Date      | Date the user account was last updated | Required, Automatically generated              |
+
+#### Methods
+| Name                | Parameters                                                    | Description                                        | Return Type |
+| ------------------- | ------------------------------------------------------------- | -------------------------------------------------- | ----------- |
+| createUser          | nickname: String, email: String, password: String             | Creates a new user                                 | Void        |
+| updateUser          | id: String, nickname: String, email: String, password: String | Updates an existing user's information             | Void        |
+| deleteUser          | id: String                                                    | Deletes a user                                     | Void        |
+| addFavoriteEvent    | userId: String, eventId: String                               | Adds an event to the user's list of favorites      | Void        |
+| removeFavoriteEvent | userId: String, eventId: String                               | Removes an event from the user's list of favorites | Void        |
+---
+#### Relations
+| Related Class | Relationship Type  | Description                                                              |
+| ------------- | ------------------ | ------------------------------------------------------------------------ |
+| Event         | Association (1\:N) | A user can search for and add multiple events to their list of favorites |
+
+
+---
+
+### ✍️ Detailed Creator Class
+##### Class: Creator
+
+| Attribute   | Type   | Description                      | Constraints                          |
+|-------------|--------|----------------------------------|--------------------------------------|
+| id          | String | Unique identifier of the creator | Required, Unique                     |
+| name        | String | Name of the creator              | Required                             |
+| email       | String | Email address of the creator     | Required, Unique, Valid email format |
+| password    | String | Creator's password               | Required, Encrypted                  |
+| siren       | String | SIREN number                     | Required, Valid format               |
+| siret       | String | SIRET number                     | Required, Valid format               |
+| createAt    | Date   | Account creation date            | Required, Auto-generated             |
+| updateAt    | Date   | Last update date                 | Required, Auto-generated             |
+
+
+##### Methods
+
+| Method         | Parameters                                                                                          | Description              | Return Type |
+|----------------|-----------------------------------------------------------------------------------------------------|--------------------------|-------------|
+| createCreator  | (name: String, email: String, password: String, siren: String, siret: String)                       | Creates a new creator    | Void        |
+| updateCreator  | (id: String, name: String, email: String, password: String, siren: String, siret: String)           | Updates an existing creator | Void     |
+| deleteCreator  | (id: String)                                                                                        | Deletes a creator        | Void        |
+
+#### Relationships
+
+| Related Class | Relationship Type | Description                                      |
+|----------------|-------------------|--------------------------------------------------|
+| Creator        | One-to-Many       | A creator can create and own multiple events     |
+
+---
+
+### 📅 Detailed Event Class
+
+#### Methods
+| Attribute   | Type   | Description                      | Constraints                          |
+|-------------|--------|----------------------------------|--------------------------------------|
+| id          | String | Unique identifier of the creator | Required, Unique                     |
+| name        | String | Name of the creator              | Required                             |
+| email       | String | Email address of the creator     | Required, Unique, Valid email format |
+| password    | String | Creator's password               | Required, Encrypted                  |
+| siren       | String | SIREN number                     | Required, Valid format               |
+| siret       | String | SIRET number                     | Required, Valid format               |
+| createAt    | Date   | Account creation date            | Required, Auto-generated             |
+| updateAt    | Date   | Last update date                 | Required, Auto-generated             |
+
+#### Attributes
+
+| Method         | Parameters                                                                                          | Description              | Return Type |
+|----------------|-----------------------------------------------------------------------------------------------------|--------------------------|-------------|
+| createCreator  | (name: String, email: String, password: String, siren: String, siret: String)                       | Creates a new creator    | Void        |
+| updateCreator  | (id: String, name: String, email: String, password: String, siren: String, siret: String)           | Updates an existing creator | Void     |
+| deleteCreator  | (id: String)                                                                                        | Deletes a creator        | Void        |
+
+
+#### Relations
+
+| Related Class  | Relationship Type | Description                                 |
+|----------------|-------------------|---------------------------------------------|
+| Creator          | One-to-Many       | An event can be own only by one creator   |
+
+
+
