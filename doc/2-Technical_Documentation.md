@@ -180,7 +180,7 @@ Creator --> Event : create / owns
 |----------------|-----------------------------------------------------------------------------------------------------|--------------------------|-------------|
 | createCreator  | (name: String, email: String, password: String, siren: String, siret: String)                       | Creates a new creator    | Void        |
 | updateCreator  | (id: String, name: String, email: String, password: String, siren: String, siret: String)           | Updates an existing creator | Void     |
-| deleteCreator  | (id: String)                                                                                        | Deletes a creator        | Void        |
+| deleteCreator  | (id: String)                                                                                        | Deletes a creator and events associated      | Void        |
 
 
 #### Relations
