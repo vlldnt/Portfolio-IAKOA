@@ -70,8 +70,8 @@ class Creator {
   name: String
   email: String
   password: String
-  siren: String (9)
-  siret: String (14)
+  siren: String
+  siret: String
   createAt: Date
   updateAt: Date
 }
