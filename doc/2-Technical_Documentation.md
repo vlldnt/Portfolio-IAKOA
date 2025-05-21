@@ -1,4 +1,4 @@
-# Technical Documentation
+# IAKOA - Technical Documentation
 
 ## User Stories and Mockup
 
@@ -48,3 +48,7 @@
 ## First UI Design :
 
 ![First UI Design](https://github.com/vlldnt/Portfolio-IAKOA/blob/main/doc/images/ui_v2.png?raw=true)
+
+## Design System Architecture
+
+![IAKOA-Flowchart](https://github.com/vlldnt/Portfolio-IAKOA/blob/main/doc/images/diagram_IAKOA_flowchart.png?raw=true)
