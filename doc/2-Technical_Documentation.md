@@ -58,7 +58,6 @@ classDiagram
 
 class User {
   id: String
-  nickname: String
   email: String
   password: String
   favoritesEvent: [String]
@@ -105,7 +104,6 @@ Creator --> Event : create / owns
 | Name           | Type      | Description                            | Constraints                                    |
 | -------------- | --------- | -------------------------------------- | ---------------------------------------------- |
 | id             | String    | Unique identifier of the user          | Required, Unique                               |
-| nickname       | String    | User's nickname                        | Required                                       |
 | email          | String    | User's email address                   | Required, Unique, Must be a valid email format |
 | password       | String    | User's password                        | Required, Must be encrypted                    |
 | favoritesEvent | \[String] | List of favorite event identifiers     | Can be empty                                   |
@@ -120,7 +118,7 @@ Creator --> Event : create / owns
 | deleteUser          | id: String                                                    | Deletes a user                                     | Void        |
 | addFavoriteEvent    | userId: String, eventId: String                               | Adds an event to the user's list of favorites      | Void        |
 | removeFavoriteEvent | userId: String, eventId: String                               | Removes an event from the user's list of favorites | Void        |
----
+
 #### Relations
 | Related Class | Relationship Type  | Description                                                              |
 | ------------- | ------------------ | ------------------------------------------------------------------------ |
@@ -130,7 +128,8 @@ Creator --> Event : create / owns
 ---
 
 ### ✍️ Detailed Creator Class
-##### Class: Creator
+
+#### Attributes
 
 | Attribute   | Type   | Description                      | Constraints                          |
 |-------------|--------|----------------------------------|--------------------------------------|
@@ -139,21 +138,18 @@ Creator --> Event : create / owns
 | email       | String | Email address of the creator     | Required, Unique, Valid email format |
 | password    | String | Creator's password               | Required, Encrypted                  |
 | siren       | String | SIREN number                     | Required, Valid format               |
-| siret       | String | SIRET number                     | Required, Valid format               |
 | createAt    | Date   | Account creation date            | Required, Auto-generated             |
 | updateAt    | Date   | Last update date                 | Required, Auto-generated             |
 
 
-##### Methods
-
+#### Methods
 | Method         | Parameters                                                                                          | Description              | Return Type |
 |----------------|-----------------------------------------------------------------------------------------------------|--------------------------|-------------|
-| createCreator  | (name: String, email: String, password: String, siren: String, siret: String)                       | Creates a new creator    | Void        |
-| updateCreator  | (id: String, name: String, email: String, password: String, siren: String, siret: String)           | Updates an existing creator | Void     |
-| deleteCreator  | (id: String)                                                                                        | Deletes a creator        | Void        |
+| createCreator  | name: String, email: String, password: String, siren: String, siret: String                      | Creates a new creator       | Void        |
+| updateCreator  | id: String, name: String, email: String, password: String, siren: String, siret: String          | Updates an existing creator | Void     |
+| deleteCreator  | id: String                                                                                        | Deletes a creator           | Void        |
 
 #### Relationships
-
 | Related Class | Relationship Type | Description                                      |
 |----------------|-------------------|--------------------------------------------------|
 | Creator        | One-to-Many       | A creator can create and own multiple events     |
@@ -162,29 +158,36 @@ Creator --> Event : create / owns
 
 ### 📅 Detailed Event Class
 
-#### Methods
-| Attribute   | Type   | Description                      | Constraints                          |
-|-------------|--------|----------------------------------|--------------------------------------|
-| id          | String | Unique identifier of the creator | Required, Unique                     |
-| name        | String | Name of the creator              | Required                             |
-| email       | String | Email address of the creator     | Required, Unique, Valid email format |
-| password    | String | Creator's password               | Required, Encrypted                  |
-| siren       | String | SIREN number                     | Required, Valid format               |
-| siret       | String | SIRET number                     | Required, Valid format               |
-| createAt    | Date   | Account creation date            | Required, Auto-generated             |
-| updateAt    | Date   | Last update date                 | Required, Auto-generated             |
-
 #### Attributes
+| Name           | Type      | Description                            | Constraints                                    |
+| ------------ | -------- | ----------------------------------------------- | ---------------------------------------------- |
+| id           | String   | Unique identifier for the event.                 | Required, Unique                              |
+| creatorId    | String   | Identifier of the event creator.                | Required                                       |
+| name         | String   | Name of the event.                              | Required                                       |
+| description  | String   | Description of the event.                       | Can be empty                                   |
+| location     | String   | Location of the event.                          | Required                                       |
+| pricing      | Int      | Price of the event (0 if free).                 | Required                                       |
+| date         | Date     | Date of the event.                              | Required                                       |
+| facebookLink | String?  | Link to the Facebook page of the event.          | Optional                                       |
+| instagramLink| String?  | Link to the Instagram page of the event.        | Optional                                       |
+| tiktokLink   | String?  | Link to the TikTok page of the event.           | Optional                                       |
+| youtubeLink  | String?  | Link to the YouTube page of the event.          | Optional                                       |
+| xLink        | String?  | Link to the X (Twitter) page of the event.      | Optional                                       |
+| websiteLink  | String?  | Link to the website of the event.               | Optional                                       |
+| createAt     | Date     | Date of creation of the event.                   | Required, Auto-generated                       |
+| updateAt     | Date     | Date of the last update of the event.           | Can be empty, Auto-generated                        |
 
+
+
+#### Methods
 | Method         | Parameters                                                                                          | Description              | Return Type |
 |----------------|-----------------------------------------------------------------------------------------------------|--------------------------|-------------|
-| createCreator  | (name: String, email: String, password: String, siren: String, siret: String)                       | Creates a new creator    | Void        |
-| updateCreator  | (id: String, name: String, email: String, password: String, siren: String, siret: String)           | Updates an existing creator | Void     |
-| deleteCreator  | (id: String)                                                                                        | Deletes a creator and events associated      | Void        |
+| createEvent  | id: String, creatorId: String, name: String, description: String, location: String, pricing: Int, date: Date, facebookLink: String?, instagramLink: String?, tiktokLink: String?, youtubeLink: String?, xLink: String?, websiteLink: String?                   | Creates a new event   | Void        |
+| updateEvent  | id: String, creatorId: String, name: String, description: String, location: String, pricing: Int, date: Date, facebookLink: String?, instagramLink: String?, tiktokLink: String?, youtubeLink: String?, xLink: String?, websiteLink: String?           | Updates an existing creator | Void     |
+| deleteEvent  | id: String, creatorId: String                                                                                        | Deletes a creator and events associated      | Void        |
 
 
 #### Relations
-
 | Related Class  | Relationship Type | Description                                 |
 |----------------|-------------------|---------------------------------------------|
 | Creator          | One-to-Many       | An event can be own only by one creator   |
