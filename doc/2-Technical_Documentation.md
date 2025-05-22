@@ -52,7 +52,7 @@
 ![First UI Design](https://github.com/vlldnt/Portfolio-IAKOA/blob/main/doc/images/ui_v2.png?raw=true)
 
 ## Design System Architecture
-
+![flowchart-iakoa](https://github.com/vlldnt/Portfolio-IAKOA/blob/main/doc/images/diagram_IAKOA_flowchart.png?raw=true)
 ```mermaid
 classDiagram
 
@@ -227,3 +227,7 @@ Creator --> Event : create / owns
 | Update event    | PUT `/api/events/{id}`    | `Firestore().collection("events").document(id).updateData(...)`      |
 | Delete event    | DELETE `/api/events/{id}` | `Firestore().collection("events").document(id).delete(...)`          |
 | Search events   | GET `/api/events/search`  | `Firestore().collection("events").whereField(...).getDocuments(...)` |
+
+
+### List of external APIs:
+- 
