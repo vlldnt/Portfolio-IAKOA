@@ -192,3 +192,39 @@ Creator --> Event : create / owns
 |----------------|-------------------|---------------------------------------------|
 | Creator          | One-to-Many       | An event can be own only by one creator   |
 
+---
+
+## External and Internal APIs
+
+## 📘 Internet API Endpoints
+
+### 👤 Users
+
+| Endpoint | HTTP Method | Input Format | Output Format (JSON) | Description |
+|----------|:-------------:|:-------------:|-----------------------|-------------|
+| `/api/users` | POST | JSON | `{ "id": "string", "email": "string", "createAt": "date", "updateAt": "date" }` | Create a new user |
+| `/api/users/{id}` | GET | Query Parameters | `{ "id": "string", "nickname": "string", "email": "string", "createAt": "date", "updateAt": "date" }` | Get user details by ID |
+| `/api/users/{id}` | PUT | JSON | `{ "id": "string", "nickname": "string", "email": "string", "updateAt": "date" }` | Update user details by ID |
+| `/api/users/{id}` | DELETE | / | `{ "message": "User deleted successfully" }` | Delete a user by ID |
+| `/api/users/{id}/favorites` | GET | / | `{ "favoritesEvent": ["eventId1", "eventId2", ...] }` | Get user's favorite events |
+| `/api/users/{id}/favorites` | POST | JSON | `{ "message": "Event added to favorites" }` | Add an event to user's favorites |
+| `/api/users/{id}/favorites/{eventId}` | DELETE | / | `{ "message": "Event removed from favorites" }` | Remove an event from user's favorites |
+
+### 🧑‍🎨 Creators
+
+| Endpoint | HTTP Method | Input Format | Output Format (JSON) | Description |
+|----------|:-------------:|:-------------:|-----------------------|-------------|
+| `/api/creators` | POST | JSON | `{ "id": "string", "name": "string", "email": "string", "createAt": "date", "updateAt": "date" }` | Create a new creator |
+| `/api/creators/{id}` | GET | Query Parameters | `{ "id": "string", "name": "string", "email": "string", "createAt": "date", "updateAt": "date" }` | Get creator details by ID |
+| `/api/creators/{id}` | PUT | JSON | `{ "id": "string", "name": "string", "email": "string", "updateAt": "date" }` | Update creator details by ID |
+| `/api/creators/{id}` | DELETE | / | `{ "message": "Creator deleted successfully" }` | Delete a creator by ID |
+
+### 🎉 Events
+
+| Endpoint | HTTP Method | Input Format | Output Format (JSON) | Description |
+|----------|:-------------:|:-------------:|-----------------------|-------------|
+| `/api/events` | POST | JSON | `{"id": "String", "creatorId": "String", "name": "String", "description": "String", "location": "String", "pricing": 0, "date": "String", "facebookLink": "String", "instagramLink": "String", "tiktokLink": null, "youtubeLink": "String", "xLink": "String", "websiteLink": "String"}` | Create a new event |
+| `/api/events/{id}` | GET | Query Parameters | `{ "id": "string"}` | Get event details by ID |
+| `/api/events/{id}` | PUT | JSON | `{"id": "String", "creatorId": "String", "name": "String", "description": "String", "location": "String", "pricing": 0, "date": "String", "facebookLink": "String", "instagramLink": "String", "tiktokLink": null, "youtubeLink": "String", "xLink": "String", "websiteLink": "String"}` | Update event details by ID |
+| `/api/events/{id}` | DELETE | JSON | `{ "message": "Event deleted successfully" }` | Delete an event by ID |
+| `/api/events/search` | GET | Query Parameters | `{ "events": [{ "id": "string", "name": "string", "location": "string", "date": "date" }, ...] }` | Search for events |
