@@ -102,31 +102,71 @@ Creator --> Event : create / owns
 ---
 ## High-Level Sequence Diagrams
 
+### Creator and User Sequence Diagram
 ```mermaid
 sequenceDiagram
     participant User
+    participant Creator
     participant SwiftUIApp
     participant FirebaseFirestore
 
-    User->>SwiftUIApp: Create Event
-    SwiftUIApp->>FirebaseFirestore: POST /events
-    FirebaseFirestore-->>SwiftUIApp: Event Created
-    SwiftUIApp-->>User: Event Created
+    %% User Operations
+    User->>SwiftUIApp: Create Account
+    SwiftUIApp->>FirebaseFirestore: POST /users
+    FirebaseFirestore-->>SwiftUIApp: Account Created
+    SwiftUIApp-->>User: Account Created
 
-    User->>SwiftUIApp: Read Events
+    User->>SwiftUIApp: Update Account
+    SwiftUIApp->>FirebaseFirestore: PUT /users/{id}
+    FirebaseFirestore-->>SwiftUIApp: Account Updated
+    SwiftUIApp-->>User: Account Updated
+
+    User->>SwiftUIApp: Delete Account
+    SwiftUIApp->>FirebaseFirestore: DELETE /users/{id}
+    FirebaseFirestore-->>SwiftUIApp: Account Deleted
+    SwiftUIApp-->>User: Account Deleted
+
+    User->>SwiftUIApp: Add Event to Favorites
+    SwiftUIApp->>FirebaseFirestore: POST /users/{id}/favorites
+    FirebaseFirestore-->>SwiftUIApp: Event Added to Favorites
+    SwiftUIApp-->>User: Event Added to Favorites
+
+    User->>SwiftUIApp: Get Events
     SwiftUIApp->>FirebaseFirestore: GET /events
     FirebaseFirestore-->>SwiftUIApp: Events List
     SwiftUIApp-->>User: Display Events
 
-    User->>SwiftUIApp: Update Event
+    %% Creator Operations
+    Creator->>SwiftUIApp: Create Account
+    SwiftUIApp->>FirebaseFirestore: POST /creators
+    FirebaseFirestore-->>SwiftUIApp: Account Created
+    SwiftUIApp-->>Creator: Account Created
+
+    Creator->>SwiftUIApp: Update Account
+    SwiftUIApp->>FirebaseFirestore: PUT /creators/{id}
+    FirebaseFirestore-->>SwiftUIApp: Account Updated
+    SwiftUIApp-->>Creator: Account Updated
+
+    Creator->>SwiftUIApp: Delete Account
+    SwiftUIApp->>FirebaseFirestore: DELETE /creators/{id}
+    FirebaseFirestore-->>SwiftUIApp: Account Deleted
+    SwiftUIApp-->>Creator: Account Deleted
+
+    Creator->>SwiftUIApp: Create Event
+    SwiftUIApp->>FirebaseFirestore: POST /events
+    FirebaseFirestore-->>SwiftUIApp: Event Created
+    SwiftUIApp-->>Creator: Event Created
+
+    Creator->>SwiftUIApp: Update Event
     SwiftUIApp->>FirebaseFirestore: PUT /events/{id}
     FirebaseFirestore-->>SwiftUIApp: Event Updated
-    SwiftUIApp-->>User: Event Updated
+    SwiftUIApp-->>Creator: Event Updated
 
-    User->>SwiftUIApp: Delete Event
+    Creator->>SwiftUIApp: Delete Event
     SwiftUIApp->>FirebaseFirestore: DELETE /events/{id}
     FirebaseFirestore-->>SwiftUIApp: Event Deleted
-    SwiftUIApp-->>User: Event Deleted
+    SwiftUIApp-->>Creator: Event Deleted
+
 ```
 
 ---
