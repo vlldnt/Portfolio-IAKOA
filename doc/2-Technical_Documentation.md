@@ -304,6 +304,37 @@ sequenceDiagram
 | Delete event    | DELETE `/api/events/{id}` | `Firestore().collection("events").document(id).delete(...)`          |
 | Search events   | GET `/api/events/search`  | `Firestore().collection("events").whereField(...).getDocuments(...)` |
 
-
+---
 ### List of external APIs:
-- 
+- **CoreLocation:** Apple framework for obtaining the geographical position of the device
+- **MapKit:** Apple framework for displaying and interacting with maps
+- **Sirene:** Unique identification number for businesses in France (SIREN)
+- **Image/PDF Analysis API**: API for analyzing and extracting information from images and PDFs (ex: Google Cloud Vision / PDF.co)
+
+--- 
+## Plan Software Configuration Management and Quality Assurance Strategies
+
+### SCM Strategy
+1. Version Control Tool:
+  - **Tool**: Git
+  - **Purpose**: To manage code versions, track changes, and facilitate collaboration among developers.
+
+2. Branching Strategies:
+  - **main** — for the functional project (stable, production-ready)
+  - **dev** — for improvements (integration and development of new features)
+  - **test** — for testing (quality assurance, validation)
+
+3. Commit and Code Review Process:
+- **Regular Commits:** commit changes regularly with meaningful commit messages
+
+### QA Strategy
+### 1. Testing Strategy:
+
+  - **Unit Tests:** Write unit tests for individual functions and methods to ensure they work as expected
+  - **Integration Tests:** 
+    - Verify the interaction between your SwiftUI views and Firebase services (authentication, database reads/writes).
+    - Use tools like XCTest with mock Firebase services or use Firebase emulators to simulate backend responses.
+  - **Manual Testing:** Perform manual testing for critical user flows and edge cases
+### 2. Testing Tools:
+  - Unit Tests: XCTest (for SwiftUI)
+  - Manual Testing
