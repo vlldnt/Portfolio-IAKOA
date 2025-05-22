@@ -53,6 +53,8 @@
 
 ## Design System Architecture
 ![flowchart-iakoa](https://github.com/vlldnt/Portfolio-IAKOA/blob/main/doc/images/diagram_IAKOA_flowchart.png?raw=true)
+
+## Components, Classes, and Database Design
 ```mermaid
 classDiagram
 
@@ -97,6 +99,36 @@ class Event {
 User --> Event : searches
 Creator --> Event : create / owns
 ```
+---
+## High-Level Sequence Diagrams
+
+```mermaid
+sequenceDiagram
+    participant User
+    participant SwiftUIApp
+    participant FirebaseFirestore
+
+    User->>SwiftUIApp: Create Event
+    SwiftUIApp->>FirebaseFirestore: POST /events
+    FirebaseFirestore-->>SwiftUIApp: Event Created
+    SwiftUIApp-->>User: Event Created
+
+    User->>SwiftUIApp: Read Events
+    SwiftUIApp->>FirebaseFirestore: GET /events
+    FirebaseFirestore-->>SwiftUIApp: Events List
+    SwiftUIApp-->>User: Display Events
+
+    User->>SwiftUIApp: Update Event
+    SwiftUIApp->>FirebaseFirestore: PUT /events/{id}
+    FirebaseFirestore-->>SwiftUIApp: Event Updated
+    SwiftUIApp-->>User: Event Updated
+
+    User->>SwiftUIApp: Delete Event
+    SwiftUIApp->>FirebaseFirestore: DELETE /events/{id}
+    FirebaseFirestore-->>SwiftUIApp: Event Deleted
+    SwiftUIApp-->>User: Event Deleted
+```
+
 ---
 ### 👤 Detailed User Class
 
