@@ -105,7 +105,6 @@ Creator --> Event : create / owns
 ### Creator and User Sequence Diagram
 ```mermaid
 sequenceDiagram
-    participant User
     participant Creator
     participant SwiftUIApp
     participant FirebaseFirestore
@@ -140,8 +139,14 @@ sequenceDiagram
     SwiftUIApp->>FirebaseFirestore: DELETE /events/{id}
     FirebaseFirestore-->>SwiftUIApp: Event Deleted
     SwiftUIApp-->>Creator: Event Deleted
+```
 
-    %% User Operations
+```mermaid
+sequenceDiagram
+    participant User
+    participant SwiftUIApp
+    participant FirebaseFirestore
+%% User Operations
     User->>SwiftUIApp: Create Account
     SwiftUIApp->>FirebaseFirestore: POST /users
     FirebaseFirestore-->>SwiftUIApp: Account Created
@@ -166,7 +171,6 @@ sequenceDiagram
     SwiftUIApp->>FirebaseFirestore: GET /events
     FirebaseFirestore-->>SwiftUIApp: Events List
     SwiftUIApp-->>User: Display Events
-
 ```
 
 ---
