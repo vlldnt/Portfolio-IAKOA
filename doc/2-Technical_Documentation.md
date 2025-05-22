@@ -227,10 +227,3 @@ Creator --> Event : create / owns
 | Update event    | PUT `/api/events/{id}`    | `Firestore().collection("events").document(id).updateData(...)`      |
 | Delete event    | DELETE `/api/events/{id}` | `Firestore().collection("events").document(id).delete(...)`          |
 | Search events   | GET `/api/events/search`  | `Firestore().collection("events").whereField(...).getDocuments(...)` |
-
-
-
-
-🧠 Final Summary
-REST API: You build and manage your own API endpoints (/api/users/...) using a backend like Express, Django, etc.
-Firebase SDK: You use Firebase's built-in tools directly in SwiftUI (no need to build your own API).
