@@ -110,32 +110,6 @@ sequenceDiagram
     participant SwiftUIApp
     participant FirebaseFirestore
 
-    %% User Operations
-    User->>SwiftUIApp: Create Account
-    SwiftUIApp->>FirebaseFirestore: POST /users
-    FirebaseFirestore-->>SwiftUIApp: Account Created
-    SwiftUIApp-->>User: Account Created
-
-    User->>SwiftUIApp: Update Account
-    SwiftUIApp->>FirebaseFirestore: PUT /users/{id}
-    FirebaseFirestore-->>SwiftUIApp: Account Updated
-    SwiftUIApp-->>User: Account Updated
-
-    User->>SwiftUIApp: Delete Account
-    SwiftUIApp->>FirebaseFirestore: DELETE /users/{id}
-    FirebaseFirestore-->>SwiftUIApp: Account Deleted
-    SwiftUIApp-->>User: Account Deleted
-
-    User->>SwiftUIApp: Add Event to Favorites
-    SwiftUIApp->>FirebaseFirestore: POST /users/{id}/favorites
-    FirebaseFirestore-->>SwiftUIApp: Event Added to Favorites
-    SwiftUIApp-->>User: Event Added to Favorites
-
-    User->>SwiftUIApp: Get Events
-    SwiftUIApp->>FirebaseFirestore: GET /events
-    FirebaseFirestore-->>SwiftUIApp: Events List
-    SwiftUIApp-->>User: Display Events
-
     %% Creator Operations
     Creator->>SwiftUIApp: Create Account
     SwiftUIApp->>FirebaseFirestore: POST /creators
@@ -166,6 +140,32 @@ sequenceDiagram
     SwiftUIApp->>FirebaseFirestore: DELETE /events/{id}
     FirebaseFirestore-->>SwiftUIApp: Event Deleted
     SwiftUIApp-->>Creator: Event Deleted
+
+    %% User Operations
+    User->>SwiftUIApp: Create Account
+    SwiftUIApp->>FirebaseFirestore: POST /users
+    FirebaseFirestore-->>SwiftUIApp: Account Created
+    SwiftUIApp-->>User: Account Created
+
+    User->>SwiftUIApp: Update Account
+    SwiftUIApp->>FirebaseFirestore: PUT /users/{id}
+    FirebaseFirestore-->>SwiftUIApp: Account Updated
+    SwiftUIApp-->>User: Account Updated
+
+    User->>SwiftUIApp: Delete Account
+    SwiftUIApp->>FirebaseFirestore: DELETE /users/{id}
+    FirebaseFirestore-->>SwiftUIApp: Account Deleted
+    SwiftUIApp-->>User: Account Deleted
+
+    User->>SwiftUIApp: Add Event to Favorites
+    SwiftUIApp->>FirebaseFirestore: POST /users/{id}/favorites
+    FirebaseFirestore-->>SwiftUIApp: Event Added to Favorites
+    SwiftUIApp-->>User: Event Added to Favorites
+
+    User->>SwiftUIApp: Get Events
+    SwiftUIApp->>FirebaseFirestore: GET /events
+    FirebaseFirestore-->>SwiftUIApp: Events List
+    SwiftUIApp-->>User: Display Events
 
 ```
 
