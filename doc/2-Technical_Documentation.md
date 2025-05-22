@@ -161,21 +161,21 @@ Creator --> Event : create / owns
 #### Attributes
 | Name           | Type      | Description                            | Constraints                                    |
 | ------------ | -------- | ----------------------------------------------- | ---------------------------------------------- |
-| id           | String   | Unique identifier for the event.                 | Required, Unique                              |
-| creatorId    | String   | Identifier of the event creator.                | Required                                       |
-| name         | String   | Name of the event.                              | Required                                       |
-| description  | String   | Description of the event.                       | Can be empty                                   |
-| location     | String   | Location of the event.                          | Required                                       |
-| pricing      | Int      | Price of the event (0 if free).                 | Required                                       |
-| date         | Date     | Date of the event.                              | Required                                       |
-| facebookLink | String?  | Link to the Facebook page of the event.          | Optional                                       |
-| instagramLink| String?  | Link to the Instagram page of the event.        | Optional                                       |
-| tiktokLink   | String?  | Link to the TikTok page of the event.           | Optional                                       |
-| youtubeLink  | String?  | Link to the YouTube page of the event.          | Optional                                       |
-| xLink        | String?  | Link to the X (Twitter) page of the event.      | Optional                                       |
-| websiteLink  | String?  | Link to the website of the event.               | Optional                                       |
-| createAt     | Date     | Date of creation of the event.                   | Required, Auto-generated                       |
-| updateAt     | Date     | Date of the last update of the event.           | Can be empty, Auto-generated                        |
+| id           | String   | Unique identifier for the event                 | Required, Unique                              |
+| creatorId    | String   | Identifier of the event creator                | Required                                       |
+| name         | String   | Name of the event                              | Required                                       |
+| description  | String   | Description of the event                       | Can be empty                                   |
+| location     | String   | Location of the event                          | Required                                       |
+| pricing      | Int      | Price of the event (0 if free)                 | Required                                       |
+| date         | Date     | Date of the event                              | Required                                       |
+| facebookLink | String?  | Link to the Facebook page of the event          | Optional                                       |
+| instagramLink| String?  | Link to the Instagram page of the event        | Optional                                       |
+| tiktokLink   | String?  | Link to the TikTok page of the event           | Optional                                       |
+| youtubeLink  | String?  | Link to the YouTube page of the event          | Optional                                       |
+| xLink        | String?  | Link to the X (Twitter) page of the event      | Optional                                       |
+| websiteLink  | String?  | Link to the website of the event               | Optional                                       |
+| createAt     | Date     | Date of creation of the event                   | Required, Auto-generated                       |
+| updateAt     | Date     | Date of the last update of the event           | Can be empty, Auto-generated                        |
 
 
 
@@ -191,6 +191,4 @@ Creator --> Event : create / owns
 | Related Class  | Relationship Type | Description                                 |
 |----------------|-------------------|---------------------------------------------|
 | Creator          | One-to-Many       | An event can be own only by one creator   |
-
-
 
