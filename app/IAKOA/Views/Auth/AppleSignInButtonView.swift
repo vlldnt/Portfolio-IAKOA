@@ -1,14 +1,7 @@
-//
-//  AppleSignInButtonView.swift
-//  IAKOA
-//
-//  Created by Adrien V on 09/06/2025.
-//
-
-
 import SwiftUI
 import AuthenticationServices
 
+// AppleSignInButtonView displays the Sign in with Apple button and handles authentication flow
 struct AppleSignInButtonView: View {
     @StateObject private var authManager = AppleAuthManager.shared
     @State private var showAlert = false

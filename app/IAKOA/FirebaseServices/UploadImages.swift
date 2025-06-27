@@ -3,7 +3,7 @@ import FirebaseStorage
 import SDWebImage
 import SDWebImageWebPCoder
 
-/// Convertit une UIImage en WebP compressé
+// Converts a UIImage to compressed WebP data
 func convertToWebP(_ image: UIImage, quality: CGFloat = 0.2) -> Data? {
     let options: [SDImageCoderOption: Any] = [
         .encodeCompressionQuality: quality
@@ -11,7 +11,7 @@ func convertToWebP(_ image: UIImage, quality: CGFloat = 0.2) -> Data? {
     return SDImageWebPCoder.shared.encodedData(with: image, format: .webP, options: options)
 }
 
-/// Redimensionne une image avant conversion
+// Resizes an image before conversion
 func resizeImage(_ image: UIImage, maxDimension: CGFloat = 640) -> UIImage {
     let size = image.size
     let aspectRatio = size.width / size.height
@@ -26,7 +26,7 @@ func resizeImage(_ image: UIImage, maxDimension: CGFloat = 640) -> UIImage {
     }
 }
 
-/// Upload une liste d'images compressées en WebP vers Firebase Storage
+// Uploads a list of compressed WebP images to Firebase Storage
 func uploadImages(_ images: [UIImage], completion: @escaping ([String]) -> Void) {
     var links: [String] = []
     let dispatchGroup = DispatchGroup()

@@ -5,7 +5,6 @@ import PhotosUI
 import CoreLocation
 
 struct EventStepsUpdateView: View {
-    // Callback pour notifier la mise à jour
     var onUpdate: (() -> Void)?
 
     // Step 1:
@@ -134,7 +133,7 @@ struct EventStepsUpdateView: View {
     }
 
 
-    // MARK: - Navigation Buttons
+    // Navigation Buttons
 
     private var navigationControls: some View {
         VStack(spacing: 1) {
@@ -168,7 +167,6 @@ struct EventStepsUpdateView: View {
                 if step < 3 {
                     Button("Suivant") {
                         if step == 0 && !isStep1Valid {
-                            // Ne fait rien
                         } else {
                             step += 1
                         }
@@ -227,8 +225,7 @@ struct EventStepsUpdateView: View {
     }
     
 
-    // MARK: - Helpers
-
+    // Helpers
     private func fetchUserInfo() {
         guard let uid = Auth.auth().currentUser?.uid else { return }
         UserServices.fetchUser(uid: uid) { user in
@@ -259,8 +256,7 @@ struct EventStepsUpdateView: View {
         }
     }
 
-    // MARK: - Validation
-
+    // Validation
     private var isCurrentStepValid: Bool {
         switch step {
         case 0: return isStep1Valid

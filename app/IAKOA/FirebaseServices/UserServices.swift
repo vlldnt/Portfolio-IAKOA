@@ -2,6 +2,7 @@ import Foundation
 import FirebaseAuth
 import FirebaseFirestore
 
+// UserServices groups all Firestore user-related functions (create, fetch, update, delete, favorites)
 struct UserServices {
     static func createOrUpdateUser(_ user: User, completion: ((Error?) -> Void)? = nil) {
         let db = Firestore.firestore()

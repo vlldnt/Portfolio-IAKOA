@@ -1,11 +1,3 @@
-//
-//  GoogleSignInButtonView.swift
-//  IAKOA
-//
-//  Created by Adrien V on 09/06/2025.
-//
-
-
 import SwiftUI
 import FirebaseAuth
 

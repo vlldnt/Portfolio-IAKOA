@@ -1,5 +1,6 @@
 import SwiftUI
 
+// Login View
 struct LoginView: View {
     
     @Binding var isLoggedIn: Bool

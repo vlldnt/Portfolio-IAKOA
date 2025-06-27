@@ -37,7 +37,6 @@ struct EventView: View {
     var body: some View {
         NavigationStack {
             VStack(spacing: 8) {
-                // Barre de recherche
                 HStack(spacing: 8) {
                     Image("playstore")
                         .resizable()
@@ -87,7 +86,6 @@ struct EventView: View {
                 }
                 .padding(.horizontal, 25)
                 
-                // Suggestion "Ma position actuelle"
                 if searchText.isEmpty || searchText == "Ma position actuelle" && selectedCity == nil {
                     Button(action: {
                         searchText = "Ma position actuelle"
@@ -135,7 +133,6 @@ struct EventView: View {
                     )
                 }
                 
-                // Affichage des événements
                 ScrollView {
                     if isLoading {
                         ProgressView("Chargement des événements...")

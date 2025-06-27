@@ -1,6 +1,7 @@
 import SwiftUI
 import FirebaseAuth
 
+// Changing password service View
 struct ChangePasswordView: View {
     @Environment(\.dismiss) var dismiss
     

@@ -2,6 +2,7 @@ import SwiftUI
 import FirebaseAuth
 import Firebase
 
+// authentification view
 struct AuthView: View {
     enum AuthTab { case login, signup }
     @State private var selectedTab: AuthTab = .login

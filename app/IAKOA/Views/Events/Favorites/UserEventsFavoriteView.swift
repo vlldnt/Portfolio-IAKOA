@@ -71,7 +71,7 @@ struct UserEventsFavoriteView: View {
                 self.errorMessage = error.localizedDescription
             } else {
                 self.favoriteEvents = snapshot?.documents.compactMap { doc in
-                    Event(document: doc) // Assure-toi que ce init existe
+                    Event(document: doc)
                 } ?? []
             }
             self.isLoading = false

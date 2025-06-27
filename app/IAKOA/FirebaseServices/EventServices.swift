@@ -4,6 +4,7 @@ import FirebaseFirestore
 import FirebaseAuth
 import CoreLocation
 
+/// EventServices groups all Firestore event-related functions (fetch, add, update, delete, favorites)
 struct EventServices {
     
     static func fetchEvents(
@@ -34,7 +35,6 @@ struct EventServices {
             let allEvents = snapshot?.documents.compactMap { Event(document: $0) } ?? []
 
             let filtered = allEvents.filter { event in
-                // ✅ Si une ville est sélectionnée (donc coordonnées renseignées), on ignore le filtre sur le nom
                 let matchesText: Bool
                 if cityCoordinates != nil {
                     matchesText = true

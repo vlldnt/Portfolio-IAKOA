@@ -254,7 +254,6 @@ struct EventDetailView: View {
                         if let location = event.location {
                             VStack(spacing: 12) {
                                 if !showDirectionsMenu {
-                                    // Bouton recentrer
                                     Button(action: {
                                         let coordinate = CLLocationCoordinate2D(latitude: location.latitude, longitude: location.longitude)
                                         withAnimation(.easeInOut(duration: 0.5)) {
@@ -274,7 +273,6 @@ struct EventDetailView: View {
                                     }
                                     .matchedGeometryEffect(id: "recenter", in: directionsMenuNamespace)
 
-                                    // Bouton voiture qui affiche le menu
                                     Button(action: {
                                         withAnimation(.spring(response: 0.45, dampingFraction: 0.65, blendDuration: 0.2)) {
                                             showDirectionsMenu = true
@@ -291,7 +289,6 @@ struct EventDetailView: View {
                                     .matchedGeometryEffect(id: "car", in: directionsMenuNamespace)
                                 } else {
                                     VStack(spacing: 20) {
-                                        // Icônes verticales
                                         Button {
                                             let url = URL(string: "http://maps.apple.com/?ll=\(location.latitude),\(location.longitude)")!
                                             if UIApplication.shared.canOpenURL(url) {
@@ -343,7 +340,6 @@ struct EventDetailView: View {
                                                 .shadow(color: Color.black.opacity(0.08), radius: 4, x: 0, y: 2)
                                         }
 
-                                        // Bouton pour fermer le menu
                                         Button(action: {
                                             withAnimation(.spring(response: 0.45, dampingFraction: 0.65, blendDuration: 0.2)) {
                                                 showDirectionsMenu = false

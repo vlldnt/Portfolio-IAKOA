@@ -1,6 +1,7 @@
 import Foundation
 import FirebaseAuth
 
+/// AuthServices groups Firebase authentication functions (sign in, sign up, password reset, etc.)
 struct AuthServices {
     static func signIn(email: String, password: String, completion: @escaping (Result<Void, Error>) -> Void) {
         Auth.auth().signIn(withEmail: email, password: password) { result, error in
