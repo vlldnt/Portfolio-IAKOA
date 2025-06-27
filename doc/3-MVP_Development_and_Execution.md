@@ -110,24 +110,27 @@
 
 ## 2. Monitor Progress and Adjust
 
-Since I was working alone, I managed my project by myself.
+Since I was working alone, I managed my project by myself
 
-- I tracked my progress by committing and pushing working functionalities regularly to GitHub.
-- After completing each feature or fixing a bug, I made sure to document the changes and update the project status.
+- I tracked my progress by committing and pushing working functionalities regularly to GitHub
+
+- I've mainly code on another repository : ***[iakoa-app](https://github.com/vlldnt/iakoa-app)*** for the commits list
+
+- After completing each feature or fixing a bug, I made sure to document the changes and update the project status
 - I reviewed my work frequently to identify any issues or areas needing improvement.
 - When I encountered blockers or challenges, I adjusted my approach to stay on schedule.
-- Although there were no daily stand-ups, I kept a personal log of progress and planned the next tasks accordingly.
+- Although there were no daily stand-ups, I kept a personal log of progress and planned the next tasks accordingly
 
 Exemple:
 ![Exemple](https://github.com/vlldnt/Portfolio-IAKOA/blob/main/doc/images/management-tasks.png?raw=true)
 
 ## Final Integration and QA Testing Summary
-After implementing each functionality, I thoroughly tested it individually to ensure it worked as expected. Once multiple features were integrated, I performed extensive testing and various manipulations to verify that all components worked smoothly together without breaking each other.
+After implementing each functionality, I thoroughly tested it individually to ensure it worked as expected. Once multiple features were integrated, I performed extensive testing and various manipulations to verify that all components worked smoothly together without breaking each other
 
-During this phase, I encountered several issues where modifying one function affected other parts of the app— for example, the map filter used both in event details and the main map view caused conflicts. 
+During this phase, I encountered several issues where modifying one function affected other parts of the app— for example, the map filter used both in event details and the main map view caused conflicts
 
 ![Errors](https://github.com/vlldnt/Portfolio-IAKOA/blob/main/doc/images/errors.png?raw=true)
 
-These experiences helped me identify dependencies and improve the overall integration to maintain stability and seamless user experience.
+These experiences helped me identify dependencies and improve the overall integration to maintain stability and seamless user experience
 
 

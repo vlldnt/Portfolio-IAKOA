@@ -13,10 +13,10 @@ By providing real-time event suggestions based on location and personal preferen
 
 | Step |                                                                 Name                                                                  | Description                                                                                                         |
 | :--: | :-----------------------------------------------------------------------------------------------------------------------------------: | ------------------------------------------------------------------------------------------------------------------- |
-|  1   | [Team Formation and Idea Development](https://github.com/vlldnt/Portfolio-IAKOA/blob/main/doc/0-Team_Formation-and_Idea_Development.md) | Brainstorming project ideas, evaluating feasibility, selecting an MVP, and documenting the decision-making process |
-|   2    |   [Project Charter Development](https://github.com/vlldnt/Portfolio-IAKOA/blob/main/doc/1-Project_Charter_Development.md) | The Project Charter outlines objectives, roles, scope, risks, and a timeline  |
-|   3    |   [Technical Documentation](https://github.com/vlldnt/Portfolio-IAKOA/blob/main/doc/2-Technical_Documentation.md) | The technical documentation aims to translate project objectives into a detailed plan with clear justification for all technical decisions  |    
-|   4    |   [Technical Documentation](3-MVP_Development_and_Execution.md) | The MVP development and execution  |   
+|  0   | [Team Formation and Idea Development](https://github.com/vlldnt/Portfolio-IAKOA/blob/main/doc/0-Team_Formation-and_Idea_Development.md) | Brainstorming project ideas, evaluating feasibility, selecting an MVP, and documenting the decision-making process |
+|   1    |   [Project Charter Development](https://github.com/vlldnt/Portfolio-IAKOA/blob/main/doc/1-Project_Charter_Development.md) | The Project Charter outlines objectives, roles, scope, risks, and a timeline  |
+|   2    |   [Technical Documentation](https://github.com/vlldnt/Portfolio-IAKOA/blob/main/doc/2-Technical_Documentation.md) | The technical documentation aims to translate project objectives into a detailed plan with clear justification for all technical decisions  |    
+|   3    |   [Technical Documentation](3-MVP_Development_and_Execution.md) | The MVP development and execution  |   
 <img src="https://raw.githubusercontent.com/vlldnt/Portfolio-IAKOA/72ed5c45476e26df252f76b8849d7b2d625054d6/doc/images/iakoa-upper-case.svg" height='150'/>
 
 © Adrien Vieilledent - C#25 - [<img src="https://cdn.prod.website-files.com/6105315644a26f77912a1ada/63eea844ae4e3022154e2878_Holberton-p-800.png" width="100" />](https://www.holbertonschool.fr/)
