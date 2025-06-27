@@ -1,0 +1,722 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3F1680BE2DD12439009D938D /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 3F1680BD2DD12439009D938D /* FirebaseAuth */; };
+		3F1680C02DD12439009D938D /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 3F1680BF2DD12439009D938D /* FirebaseFirestore */; };
+		3F2CC0092DF09AC40013F5B9 /* Cloudinary in Frameworks */ = {isa = PBXBuildFile; productRef = 3F2CC0082DF09AC40013F5B9 /* Cloudinary */; };
+		3F8EB35D2DF6E4BE00B068A7 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 3F8EB35C2DF6E4BE00B068A7 /* GoogleSignIn */; };
+		3F8EB35F2DF6E4BE00B068A7 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 3F8EB35E2DF6E4BE00B068A7 /* GoogleSignInSwift */; };
+		3FC1285B2DF2ED590061F003 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 3FC1285A2DF2ED590061F003 /* FirebaseStorage */; };
+		3FC1285D2DF2ED590061F003 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 3FC1285C2DF2ED590061F003 /* FirebaseStorageCombine-Community */; };
+		3FE72CCE2DF9B8D800922581 /* SDWebImageWebPCoder in Frameworks */ = {isa = PBXBuildFile; productRef = 3FE72CCD2DF9B8D800922581 /* SDWebImageWebPCoder */; };
+		3FEA05642E0AB757001BF9A5 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 3FEA05632E0AB757001BF9A5 /* SDWebImageSwiftUI */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3FC5EDC52DBA7AC400679E4B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3FC5EDAF2DBA7AC300679E4B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3FC5EDB62DBA7AC300679E4B;
+			remoteInfo = IAKOA;
+		};
+		3FC5EDCF2DBA7AC400679E4B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3FC5EDAF2DBA7AC300679E4B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3FC5EDB62DBA7AC300679E4B;
+			remoteInfo = IAKOA;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3FC5EDB72DBA7AC300679E4B /* IAKOA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IAKOA.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FC5EDC42DBA7AC400679E4B /* IAKOATests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IAKOATests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FC5EDCE2DBA7AC400679E4B /* IAKOAUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IAKOAUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		3FC128592DF2E3460061F003 /* Exceptions for "IAKOA" folder in "IAKOA" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 3FC5EDB62DBA7AC300679E4B /* IAKOA */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		3FC5EDB92DBA7AC300679E4B /* IAKOA */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				3FC128592DF2E3460061F003 /* Exceptions for "IAKOA" folder in "IAKOA" target */,
+			);
+			path = IAKOA;
+			sourceTree = "<group>";
+		};
+		3FC5EDC72DBA7AC400679E4B /* IAKOATests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = IAKOATests;
+			sourceTree = "<group>";
+		};
+		3FC5EDD12DBA7AC400679E4B /* IAKOAUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = IAKOAUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3FC5EDB42DBA7AC300679E4B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F1680BE2DD12439009D938D /* FirebaseAuth in Frameworks */,
+				3FC1285B2DF2ED590061F003 /* FirebaseStorage in Frameworks */,
+				3F8EB35F2DF6E4BE00B068A7 /* GoogleSignInSwift in Frameworks */,
+				3FEA05642E0AB757001BF9A5 /* SDWebImageSwiftUI in Frameworks */,
+				3FC1285D2DF2ED590061F003 /* FirebaseStorageCombine-Community in Frameworks */,
+				3F1680C02DD12439009D938D /* FirebaseFirestore in Frameworks */,
+				3F2CC0092DF09AC40013F5B9 /* Cloudinary in Frameworks */,
+				3FE72CCE2DF9B8D800922581 /* SDWebImageWebPCoder in Frameworks */,
+				3F8EB35D2DF6E4BE00B068A7 /* GoogleSignIn in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FC5EDC12DBA7AC400679E4B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FC5EDCB2DBA7AC400679E4B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3FAD3C4B2DF6EB420045F093 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3FC5EDAE2DBA7AC300679E4B = {
+			isa = PBXGroup;
+			children = (
+				3FC5EDB92DBA7AC300679E4B /* IAKOA */,
+				3FC5EDC72DBA7AC400679E4B /* IAKOATests */,
+				3FC5EDD12DBA7AC400679E4B /* IAKOAUITests */,
+				3FAD3C4B2DF6EB420045F093 /* Frameworks */,
+				3FC5EDB82DBA7AC300679E4B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3FC5EDB82DBA7AC300679E4B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3FC5EDB72DBA7AC300679E4B /* IAKOA.app */,
+				3FC5EDC42DBA7AC400679E4B /* IAKOATests.xctest */,
+				3FC5EDCE2DBA7AC400679E4B /* IAKOAUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3FC5EDB62DBA7AC300679E4B /* IAKOA */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FC5EDD82DBA7AC400679E4B /* Build configuration list for PBXNativeTarget "IAKOA" */;
+			buildPhases = (
+				3FC5EDB32DBA7AC300679E4B /* Sources */,
+				3FC5EDB42DBA7AC300679E4B /* Frameworks */,
+				3FC5EDB52DBA7AC300679E4B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				3FC5EDB92DBA7AC300679E4B /* IAKOA */,
+			);
+			name = IAKOA;
+			packageProductDependencies = (
+				3F1680BD2DD12439009D938D /* FirebaseAuth */,
+				3F1680BF2DD12439009D938D /* FirebaseFirestore */,
+				3F2CC0082DF09AC40013F5B9 /* Cloudinary */,
+				3FC1285A2DF2ED590061F003 /* FirebaseStorage */,
+				3FC1285C2DF2ED590061F003 /* FirebaseStorageCombine-Community */,
+				3F8EB35C2DF6E4BE00B068A7 /* GoogleSignIn */,
+				3F8EB35E2DF6E4BE00B068A7 /* GoogleSignInSwift */,
+				3FE72CCD2DF9B8D800922581 /* SDWebImageWebPCoder */,
+				3FEA05632E0AB757001BF9A5 /* SDWebImageSwiftUI */,
+			);
+			productName = IAKOA;
+			productReference = 3FC5EDB72DBA7AC300679E4B /* IAKOA.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3FC5EDC32DBA7AC400679E4B /* IAKOATests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FC5EDDB2DBA7AC400679E4B /* Build configuration list for PBXNativeTarget "IAKOATests" */;
+			buildPhases = (
+				3FC5EDC02DBA7AC400679E4B /* Sources */,
+				3FC5EDC12DBA7AC400679E4B /* Frameworks */,
+				3FC5EDC22DBA7AC400679E4B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3FC5EDC62DBA7AC400679E4B /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				3FC5EDC72DBA7AC400679E4B /* IAKOATests */,
+			);
+			name = IAKOATests;
+			packageProductDependencies = (
+			);
+			productName = IAKOATests;
+			productReference = 3FC5EDC42DBA7AC400679E4B /* IAKOATests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3FC5EDCD2DBA7AC400679E4B /* IAKOAUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FC5EDDE2DBA7AC400679E4B /* Build configuration list for PBXNativeTarget "IAKOAUITests" */;
+			buildPhases = (
+				3FC5EDCA2DBA7AC400679E4B /* Sources */,
+				3FC5EDCB2DBA7AC400679E4B /* Frameworks */,
+				3FC5EDCC2DBA7AC400679E4B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3FC5EDD02DBA7AC400679E4B /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				3FC5EDD12DBA7AC400679E4B /* IAKOAUITests */,
+			);
+			name = IAKOAUITests;
+			packageProductDependencies = (
+			);
+			productName = IAKOAUITests;
+			productReference = 3FC5EDCE2DBA7AC400679E4B /* IAKOAUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3FC5EDAF2DBA7AC300679E4B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1630;
+				LastUpgradeCheck = 1630;
+				TargetAttributes = {
+					3FC5EDB62DBA7AC300679E4B = {
+						CreatedOnToolsVersion = 16.3;
+					};
+					3FC5EDC32DBA7AC400679E4B = {
+						CreatedOnToolsVersion = 16.3;
+						TestTargetID = 3FC5EDB62DBA7AC300679E4B;
+					};
+					3FC5EDCD2DBA7AC400679E4B = {
+						CreatedOnToolsVersion = 16.3;
+						TestTargetID = 3FC5EDB62DBA7AC300679E4B;
+					};
+				};
+			};
+			buildConfigurationList = 3FC5EDB22DBA7AC300679E4B /* Build configuration list for PBXProject "IAKOA" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3FC5EDAE2DBA7AC300679E4B;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				3F1680BC2DD12439009D938D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				3F2CC0072DF09AC40013F5B9 /* XCRemoteSwiftPackageReference "cloudinary_ios" */,
+				3F8EB35B2DF6E4BE00B068A7 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+				3FE72CCC2DF9B8D800922581 /* XCRemoteSwiftPackageReference "SDWebImageWebPCoder" */,
+				3FEA05622E0AB757001BF9A5 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 3FC5EDB82DBA7AC300679E4B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3FC5EDB62DBA7AC300679E4B /* IAKOA */,
+				3FC5EDC32DBA7AC400679E4B /* IAKOATests */,
+				3FC5EDCD2DBA7AC400679E4B /* IAKOAUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3FC5EDB52DBA7AC300679E4B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FC5EDC22DBA7AC400679E4B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FC5EDCC2DBA7AC400679E4B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3FC5EDB32DBA7AC300679E4B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FC5EDC02DBA7AC400679E4B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FC5EDCA2DBA7AC400679E4B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3FC5EDC62DBA7AC400679E4B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3FC5EDB62DBA7AC300679E4B /* IAKOA */;
+			targetProxy = 3FC5EDC52DBA7AC400679E4B /* PBXContainerItemProxy */;
+		};
+		3FC5EDD02DBA7AC400679E4B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3FC5EDB62DBA7AC300679E4B /* IAKOA */;
+			targetProxy = 3FC5EDCF2DBA7AC400679E4B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3FC5EDD62DBA7AC400679E4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3FC5EDD72DBA7AC400679E4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3FC5EDD92DBA7AC400679E4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = IAKOA/IAKOADebug.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N6G3X4W5TX;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = IAKOA/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Nous avons besoin d'accéder à votre appareil photo pour prendre des photos.";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Nous avons besoin d'accéder à votre localisation en tout temps pour fournir des fonctionnalités basées sur l'emplacement même lorsque l'application est en arrière-plan.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Nous avons besoin d'accéder à votre localisation pour fournir des fonctionnalités basées sur l'emplacement.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Nous avons besoin d'accéder à vos photos pour les sélectionner et les utiliser dans l'application.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Oldtooth.IAKOA;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3FC5EDDA2DBA7AC400679E4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = IAKOA/IAKOA.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N6G3X4W5TX;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = IAKOA/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Nous avons besoin d'accéder à votre appareil photo pour prendre des photos.";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Nous avons besoin d'accéder à votre localisation en tout temps pour fournir des fonctionnalités basées sur l'emplacement même lorsque l'application est en arrière-plan.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Nous avons besoin d'accéder à votre localisation pour fournir des fonctionnalités basées sur l'emplacement.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Nous avons besoin d'accéder à vos photos pour les sélectionner et les utiliser dans l'application.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Oldtooth.IAKOA;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3FC5EDDC2DBA7AC400679E4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Oldtooth.IAKOATests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IAKOA.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/IAKOA";
+			};
+			name = Debug;
+		};
+		3FC5EDDD2DBA7AC400679E4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Oldtooth.IAKOATests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IAKOA.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/IAKOA";
+			};
+			name = Release;
+		};
+		3FC5EDDF2DBA7AC400679E4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Oldtooth.IAKOAUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = IAKOA;
+			};
+			name = Debug;
+		};
+		3FC5EDE02DBA7AC400679E4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Oldtooth.IAKOAUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = IAKOA;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3FC5EDB22DBA7AC300679E4B /* Build configuration list for PBXProject "IAKOA" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FC5EDD62DBA7AC400679E4B /* Debug */,
+				3FC5EDD72DBA7AC400679E4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3FC5EDD82DBA7AC400679E4B /* Build configuration list for PBXNativeTarget "IAKOA" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FC5EDD92DBA7AC400679E4B /* Debug */,
+				3FC5EDDA2DBA7AC400679E4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3FC5EDDB2DBA7AC400679E4B /* Build configuration list for PBXNativeTarget "IAKOATests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FC5EDDC2DBA7AC400679E4B /* Debug */,
+				3FC5EDDD2DBA7AC400679E4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3FC5EDDE2DBA7AC400679E4B /* Build configuration list for PBXNativeTarget "IAKOAUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FC5EDDF2DBA7AC400679E4B /* Debug */,
+				3FC5EDE02DBA7AC400679E4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3F1680BC2DD12439009D938D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.12.0;
+			};
+		};
+		3F2CC0072DF09AC40013F5B9 /* XCRemoteSwiftPackageReference "cloudinary_ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/cloudinary/cloudinary_ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.0;
+			};
+		};
+		3F8EB35B2DF6E4BE00B068A7 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+		3FE72CCC2DF9B8D800922581 /* XCRemoteSwiftPackageReference "SDWebImageWebPCoder" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageWebPCoder";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.14.6;
+			};
+		};
+		3FEA05622E0AB757001BF9A5 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.1.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3F1680BD2DD12439009D938D /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3F1680BC2DD12439009D938D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		3F1680BF2DD12439009D938D /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3F1680BC2DD12439009D938D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		3F2CC0082DF09AC40013F5B9 /* Cloudinary */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3F2CC0072DF09AC40013F5B9 /* XCRemoteSwiftPackageReference "cloudinary_ios" */;
+			productName = Cloudinary;
+		};
+		3F8EB35C2DF6E4BE00B068A7 /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3F8EB35B2DF6E4BE00B068A7 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+		3F8EB35E2DF6E4BE00B068A7 /* GoogleSignInSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3F8EB35B2DF6E4BE00B068A7 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignInSwift;
+		};
+		3FC1285A2DF2ED590061F003 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3F1680BC2DD12439009D938D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		3FC1285C2DF2ED590061F003 /* FirebaseStorageCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3F1680BC2DD12439009D938D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseStorageCombine-Community";
+		};
+		3FE72CCD2DF9B8D800922581 /* SDWebImageWebPCoder */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3FE72CCC2DF9B8D800922581 /* XCRemoteSwiftPackageReference "SDWebImageWebPCoder" */;
+			productName = SDWebImageWebPCoder;
+		};
+		3FEA05632E0AB757001BF9A5 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3FEA05622E0AB757001BF9A5 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 3FC5EDAF2DBA7AC300679E4B /* Project object */;
+}
