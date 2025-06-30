@@ -1,11 +1,10 @@
 AOS.init({
-    duration: 1000,
-    once: false
+  duration: 1200, 
+  once: false 
 });
 
 window.addEventListener("scroll", () => {
   const showHeader = document.getElementById("mainHeader");
-
   if (window.scrollY > 50) {
     showHeader.classList.remove("-translate-y-full");
     showHeader.classList.add("translate-y-0");
@@ -15,9 +14,24 @@ window.addEventListener("scroll", () => {
   }
 });
 
-function scrollToNextSection() {
-  const next = document.querySelector('#features');
-  if (next) {
-    next.scrollIntoView({ behavior: 'smooth' });
+function scrollToSectionFeatures() {
+  const header = document.getElementById('mainHeader');
+  const target = document.getElementById('features');
+  const headerHeight = header.offsetHeight;
+  if (target) {
+    const top = target.offsetTop - headerHeight;
+    window.scrollTo({ top, behavior: 'smooth' });
+    location.hash = "#features"
   }
+}
+
+function scrollToSectionPro() {
+  const header = document.getElementById('mainHeader');
+  const target = document.getElementById('pro');
+  const headerHeight = header.offsetHeight;
+  if (target) {
+    const top = target.offsetTop - headerHeight;
+    window.scrollTo({ top, behavior: 'smooth' });
+    location.hash = "#pro"
   }
+}
