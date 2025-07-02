@@ -1,19 +1,22 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" class="scroll-smooth">
+
 <head>
   <meta charset="UTF-8" />
   <title>IAKOA - Vos évènements proche de chez vous !</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- AOS (Animate On Scroll) -->
   <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body class="bg-white text-gray-800">
 
-  <!-- Menu fixe en haut -->
-<header id="mainHeader" class="fixed top-0 left-0 w-full bg-white shadow z-50 transform -translate-y-full transition-transform duration-500">
-    <div class="max-w-6xl mx-auto flex items-center justify-between px-6 py-4">
+  <!--Header-->
+  <header id="mainHeader"
+    class="fixed top-0 left-0 w-full bg-white shadow z-50 transform -translate-y-full transition-transform duration-500">
+    <div class="max-w-5xl mx-auto flex items-center justify-between px-6 py-4">
       <img src="images/logo-iakoa.svg" alt="Logo IAKOA" class="h-10 md:h-12" />
       <nav class="space-x-6 text-gray-700 font-medium">
         <a href="#hero" class="hover:text-sky-500 transition">Accueil</a>
@@ -24,43 +27,54 @@
     </div>
   </header>
 
-   <section id="hero" class="h-screen bg-gray-100 flex flex-col items-center justify-center px-6 relative overflow-hidden">
-    <div class="flex items-center justify-center h-2/3">
-      <img src="images/triplePhone.png"
-           alt="Aperçu IAKOA"
-           class="max-h-full w-auto object-contain drop-shadow-xl pointer-events-none select-none" />
+<!--Section hero-->
+  <section id="hero" class="h-screen bg-gray-100 flex flex-row items-center justify-center px-6 relative overflow-hidden">
+    <div class="flex flex-row items-center justify-center h-2/3 w-full max-w-3xl mx-auto">
+      <div class="flex flex-col items-start justify-center w-1/2 space-y-6 pl-4">
+        <img src="images/logo-iakoa.svg" alt="Logo IAKOA" class="w-80 h-auto mb-4" />
+        <p class="text-gray-800 text-5xl font-extrabold leading-tight">
+          LES ÉVÈNEMENTS PROCHES<br>DE CHEZ VOUS
+        </p>
+      </div>
+      <div class="flex items-center justify-center w-1/2">
+        <img src="images/tripiphone.png" alt="Aperçu IAKOA"
+  class="w-[420px] max-h-[1200px] object-contain drop-shadow-xl pointer-events-none select-none" />
+
+      </div>
     </div>
     <div class="absolute bottom-6 left-1/2 transform -translate-x-1/2 text-center animate-bounce z-10">
-      <button onclick="scrollToSectionFeatures()" class="bg-white rounded-full shadow-lg p-3 hover:bg-gray-200 transition">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <button onclick="scrollToSectionFeatures()"
+        class="bg-white rounded-full shadow-lg p-3 hover:bg-gray-200 transition">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-700" fill="none" viewBox="0 0 24 24"
+          stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
         </svg>
       </button>
     </div>
   </section>
 
-  <!-- Section Présentation 1 -->
-   <section id="features" class="h-screen bg-gray-100 flex flex-col items-center justify-center px-6 relative overflow-hidden">
-    <div class="flex items-center justify-center h-2/3 w-full max-w-6xl mx-auto">
+  <!-- Section features -->
+  <section id="features"
+    class="h-screen bg-gray-100 flex flex-col items-center justify-center px-6 relative overflow-hidden">
+    <div class="flex items-center justify-center h-2/3 w-full max-w-6xl mx-auto p-10">
       <div class="w-full md:w-1/2 mb-10 md:mb-0">
-        <h2 class="text-3xl font-bold mb-4">Trouvez des évènements locaux</h2>
+        <h2 class="text-5xl font-bold mb-4">Trouvez des évènements locaux</h2>
         <p class="text-gray-600 mb-4">
-          IAKOA vous propose une sélection personnalisée d’évènements culturels, sportifs ou communautaires proches de vous.
+          IAKOA vous propose une sélection personnalisée d’évènements culturels, sportifs ou communautaires proches de
+          vous.
         </p>
         <ul class="list-disc list-inside text-gray-600">
           <li>Filtres par localisation</li>
           <li>Suggestions en temps réel</li>
-          <li>Notifications intelligentes</li>
+          <li>70 catégories différentes</li>
         </ul>
       </div>
       <div class="relative w-full md:w-1/2 flex items-center justify-center" style="max-width: 320px;">
-        <img src="images/mockupempty.png"
-            alt="Aperçu IAKOA"
-            class="w-full h-auto drop-shadow-xl pointer-events-none select-none" />
+        <img src="images/mockupempty.png" alt="Aperçu IAKOA"
+          class="w-full h-auto drop-shadow-xl pointer-events-none select-none"/>
         <div class="absolute inset-0 p-[5%]">
-          <video autoplay loop muted playsinline
-                class="w-full h-full object-cover rounded-[50px]">
-            <source src="images/researchHome.MP4" type="video/mp4" />
+          <video autoplay loop muted playsinline class="w-full h-full object-cover rounded-[48px]">
+            <source src="images/researchHome.MP4" type="video/mp4"/>
             Votre navigateur ne supporte pas la vidéo.
           </video>
         </div>
@@ -69,20 +83,23 @@
     </div>
     <div class="absolute bottom-6 left-1/2 transform -translate-x-1/2 text-center animate-bounce z-10">
       <button onclick="scrollToSectionPro()" class="bg-white rounded-full shadow-lg p-3 hover:bg-gray-200 transition">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-700" fill="none" viewBox="0 0 24 24"
+          stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
         </svg>
       </button>
     </div>
   </section>
 
-  <!-- Section Présentation 2 -->
-   <section id="pro" class="h-screen bg-gray-100 flex flex-col items-center justify-center px-6 relative overflow-hidden">
+  <!-- Section pro -->
+  <section id="pro"
+    class="h-screen bg-gray-100 flex flex-col items-center justify-center px-6 relative overflow-hidden">
     <div class="flex items-center justify-center h-2/3 w-full max-w-6xl mx-auto">
-      <div class="w-full md:w-1/2 mb-10 md:mb-0 md:order-2">
-        <h2 class="text-3xl font-bold mb-4">Pourquoi utiliser IAKOA ?</h2>
+      <div class="w-full md:w-1/2 mb-10 md:mb-0 md:order-2 p-10">
+        <h2 class="text-5xl font-bold mb-4">Pourquoi utiliser IAKOA ?</h2>
         <p class="text-gray-600 mb-4">
-          En tant que professionnel, créez vos propres évènements parmi 70 catégories, rendez-vous plus visible pour vos events, rapide et facile à utiliser.
+          En tant que professionnel, créez vos propres évènements parmi 70 catégories, rendez-vous plus visible pour vos
+          events, rapide et facile à utiliser.
         </p>
         <ul class="list-disc list-inside text-gray-600">
           <li>Création d’évènements simplifiée</li>
@@ -90,23 +107,26 @@
           <li>Interface rapide et intuitive</li>
         </ul>
       </div>
-      <div class="w-full md:w-1/2 flex items-center justify-center md:order-1">
-        <img src="images/mappage.png" alt="Interface application IAKOA" class="w-full max-w-xs mx-auto shadow-lg" data-aos="flip-right" />
+      <div class="relative w-full md:w-1/2 flex items-center justify-center" style="max-width: 320px;">
+        <img src="images/mappage.png" alt="Aperçu IAKOA"
+          class="w-full h-auto drop-shadow-xl pointer-events-none select-none"/>
       </div>
     </div>
   </section>
 
   <!-- Footer -->
   <footer id="footer" class="bg-blue-500 text-white py-6 px-6 mt-16" data-aos="fade-up">
-    <div class="max-w-6xl mx-auto text-center space-y-4">
+    <div class="max-w-5xl mx-auto text-center space-y-4">
       <h3 class="text-xl font-semibold">Téléchargez l’application IAKOA</h3>
-      <a href="#" class="inline-block bg-white text-blue-500 font-bold py-2 px-5 rounded-lg shadow hover:bg-gray-200 transition">
+      <a href="#"
+        class="inline-block bg-white text-blue-500 font-bold py-2 px-5 rounded-lg shadow hover:bg-gray-200 transition">
         📲 Télécharger sur l’App Store
       </a>
 
       <div class="flex justify-center space-x-6 mt-4">
         <a href="https://github.com/vlldnt/" class="hover:text-blue-300 transition">Github</a>
-        <a href="https://www.linkedin.com/in/adrien-vieilledent-791b39346/" class="hover:text-blue-300 transition">LinkedIn</a>
+        <a href="https://www.linkedin.com/in/adrien-vieilledent-791b39346/"
+          class="hover:text-blue-300 transition">LinkedIn</a>
         <a href="#" class="hover:text-blue-300 transition">Contact</a>
       </div>
 
@@ -114,20 +134,21 @@
     </div>
   </footer>
   <script>
-  tailwind.config = {
-    theme: {
-      extend: {
-        colors: {
-          iakoa: {
-            blue: '#2397FF'
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            iakoa: {
+              blue: '#2397FF'
+            }
           }
         }
       }
     }
-  }
-</script>
+  </script>
   <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
   <script src="script.js"></script>
 
 </body>
+
 </html>
