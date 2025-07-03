@@ -3,17 +3,12 @@ AOS.init({
   once: false,
 });
 
-window.addEventListener("scroll", () => {
-  const showHeader = document.getElementById("mainHeader");
-  if (window.scrollY > 50) {
-    showHeader.classList.remove("-translate-y-full");
-    showHeader.classList.add("translate-y-0");
-    showHeader.style.visibility = "visible";
-  } else {
-    showHeader.classList.remove("translate-y-0");
-    showHeader.classList.add("-translate-y-full");
-    showHeader.style.visibility = "hidden";
-  }
+window.addEventListener('DOMContentLoaded', () => {
+  const header = document.getElementById('mainHeader');
+  setTimeout(() => {
+    header.classList.remove('opacity-0', '-translate-y-8');
+    header.classList.add('opacity-100', 'translate-y-0');
+  }, 200);
 });
 
 function scrollToSectionFeatures() {
