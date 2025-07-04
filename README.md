@@ -5,6 +5,8 @@
 <br>The app helps event organizers create and manage their events while maintaining data security, user privacy, and GDPR compliance.<br>
 By providing real-time event suggestions based on location and personal preferences, IAKOA aims to be the go-to app for both users looking to attend events and organizers aiming to reach a wider audience.
 
+Page of the application here : **https://vieilledent.eu/iakoa/**
+
 ![Design](https://github.com/vlldnt/Portfolio-IAKOA/blob/main/doc/images/finalappdesign.png?raw=true)
 ---
 
