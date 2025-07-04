@@ -4,7 +4,6 @@ import FirebaseAuth
 import GoogleSignIn
 import GoogleSignInSwift
 
-// GoogleAuthManager handles Google Sign-In and Firebase authentication integration
 class GoogleAuthManager: ObservableObject {
     static let shared = GoogleAuthManager()
 

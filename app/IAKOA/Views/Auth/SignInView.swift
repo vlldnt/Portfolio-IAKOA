@@ -1,7 +1,6 @@
 import SwiftUI
 import FirebaseAuth
 
-// sign in view
 struct SignInView: View {
     @Binding var isLoggedIn: Bool
 

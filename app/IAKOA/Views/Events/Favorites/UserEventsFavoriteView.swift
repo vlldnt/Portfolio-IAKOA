@@ -43,6 +43,9 @@ struct UserEventsFavoriteView: View {
             }
             .navigationTitle("Évènements favoris")
         }
+        .sheet(item: $selectedEvent) { event in
+            EventDetailView(event: event, onClose: { selectedEvent = nil })
+        }
         .onAppear(perform: loadFavorites)
     }
 
@@ -71,7 +74,7 @@ struct UserEventsFavoriteView: View {
                 self.errorMessage = error.localizedDescription
             } else {
                 self.favoriteEvents = snapshot?.documents.compactMap { doc in
-                    Event(document: doc)
+                    Event(document: doc) // Assure-toi que ce init existe
                 } ?? []
             }
             self.isLoading = false
@@ -79,6 +82,7 @@ struct UserEventsFavoriteView: View {
     }
     
     private func removeFavorite(_ event: Event) {
+        isLoading = true
         UserServices.removeFavorite(eventID: event.id) { result in
             switch result {
             case .success:

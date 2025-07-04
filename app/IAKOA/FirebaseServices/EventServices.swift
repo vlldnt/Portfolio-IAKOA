@@ -1,12 +1,11 @@
-// EventServices.swift
 import Foundation
 import FirebaseFirestore
 import FirebaseAuth
 import CoreLocation
 
-/// EventServices groups all Firestore event-related functions (fetch, add, update, delete, favorites)
 struct EventServices {
     
+    /// Fetch events from Firestore, with optional filters (text, location, radius, categories, free only)
     static func fetchEvents(
         searchText: String = "",
         cityCoordinates: CLLocationCoordinate2D? = nil,
@@ -60,7 +59,7 @@ struct EventServices {
         }
     }
 
-
+    /// Add a new event to Firestore
     static func addEvent(_ event: Event, completion: @escaping (Result<Void, Error>) -> Void) {
         let db = Firestore.firestore()
         var data = event.toDictionary()
@@ -74,6 +73,7 @@ struct EventServices {
         }
     }
     
+    /// Update an existing event in Firestore
     static func updateEvent(_ event: Event, completion: @escaping (Result<Void, Error>) -> Void) {
         let db = Firestore.firestore()
         var data = event.toDictionary()
@@ -88,7 +88,7 @@ struct EventServices {
         }
     }
 
-
+    /// Fetch all events created by the current user
     static func fetchEventsForCurrentUser(completion: @escaping (Result<[Event], Error>) -> Void) {
         guard let userId = Auth.auth().currentUser?.uid else {
             completion(.failure(NSError(domain: "NoUser", code: 0)))
@@ -107,6 +107,7 @@ struct EventServices {
         }
     }
 
+    /// Delete an event by its ID
     static func deleteEvent(id: String, completion: @escaping (Result<Void, Error>) -> Void) {
         let db = Firestore.firestore()
         db.collection("events").document(id).delete { error in
@@ -118,6 +119,7 @@ struct EventServices {
         }
     }
     
+    /// Delete an event only if the current user is the owner
     static func deleteEventIfOwner(event: Event, completion: @escaping (Result<Void, Error>) -> Void) {
         guard let currentUserID = Auth.auth().currentUser?.uid else {
             completion(.failure(NSError(domain: "NoUser", code: 0, userInfo: [NSLocalizedDescriptionKey: "Utilisateur non connecté"])))
@@ -132,6 +134,7 @@ struct EventServices {
         deleteEvent(id: event.id, completion: completion)
     }
     
+    /// Toggle favorite status for an event for the current user
     func toggleFavoriteEvent(eventID: String, completion: @escaping (Result<Void, Error>) -> Void) {
         guard let userID = Auth.auth().currentUser?.uid else {
             print("Utilisateur non connecté")
@@ -143,8 +146,8 @@ struct EventServices {
 
         docRef.getDocument { document, error in
             if let error = error {
-                completion(.failure(error))
                 return
+                completion(.failure(error))
             }
 
             var eventIDs: [String] = []

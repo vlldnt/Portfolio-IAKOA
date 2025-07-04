@@ -17,5 +17,5 @@ struct City: Identifiable, Codable, Hashable {
 
 struct Centre: Codable, Hashable {
     let type: String
-    let coordinates: [Double]
+    let coordinates: [Double]  // [longitude, latitude] comme retourné par l'API
 }

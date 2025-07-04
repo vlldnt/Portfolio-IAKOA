@@ -1,3 +1,11 @@
+//
+//  ChangePasswordValidator.swift
+//  IAKOA
+//
+//  Created by Adrien V on 10/06/2025.
+//
+
+
 import Foundation
 
 struct ChangePasswordValidator {

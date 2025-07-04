@@ -10,7 +10,6 @@ struct ContentView: View {
 
     var body: some View {
         TabView(selection: $selectedTab) {
-            // Tab for browsing public events
             EventView(isLoggedIn: $isLoggedIn, isCreator: $isCreator)
                 .tabItem {
                     Image(systemName: "bubbles.and.sparkles")
@@ -18,7 +17,6 @@ struct ContentView: View {
                 }
                 .tag(0)
             
-            // Tab for managing events or viewing favorites depending on user role
             Group {
                 if isCreator {
                     EventsManagerView()
@@ -49,7 +47,7 @@ struct ContentView: View {
             }
             .tag(1)
         
-            // Tab for creating events or viewing the map
+
             Group {
                 if isCreator {
                     CreateView(selectedTab: $selectedTab)
@@ -68,7 +66,6 @@ struct ContentView: View {
             }
             .tag(2)
             
-            // Tab for profile or authentication
             Group {
                 if isLoggedIn {
                     ProfileView(isLoggedIn: $isLoggedIn, isCreator: $isCreator)

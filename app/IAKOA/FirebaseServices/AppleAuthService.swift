@@ -4,7 +4,6 @@ import FirebaseAuth
 import CryptoKit
 import SwiftUI
 
-/// AppleAuthManager handles Sign in with Apple and Firebase authentication integration
 class AppleAuthManager: NSObject, ObservableObject {
     static let shared = AppleAuthManager()
     
@@ -72,7 +71,6 @@ class AppleAuthManager: NSObject, ObservableObject {
     }
 }
 
-/// Handles Apple Sign In authorization callbacks
 extension AppleAuthManager: ASAuthorizationControllerDelegate {
     func authorizationController(controller: ASAuthorizationController, didCompleteWithAuthorization authorization: ASAuthorization) {
         guard let completion = completion else { return }
@@ -109,7 +107,6 @@ extension AppleAuthManager: ASAuthorizationControllerDelegate {
     }
 }
 
-/// Provides the presentation anchor for Apple Sign In
 extension AppleAuthManager: ASAuthorizationControllerPresentationContextProviding {
     func presentationAnchor(for controller: ASAuthorizationController) -> ASPresentationAnchor {
         if let windowScene = UIApplication.shared.connectedScenes

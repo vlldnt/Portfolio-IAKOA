@@ -2,7 +2,6 @@ import SwiftUI
 import FirebaseAuth
 import Firebase
 
-// authentification view
 struct AuthView: View {
     enum AuthTab { case login, signup }
     @State private var selectedTab: AuthTab = .login
@@ -15,6 +14,7 @@ struct AuthView: View {
                 .renderingMode(.template)
                 .frame(width: 280, height: 80)
                 .foregroundStyle(Color.blueIakoa)
+                .padding(.bottom, 9)
 
             ZStack {
                 GeometryReader { geo in
@@ -58,7 +58,7 @@ struct AuthView: View {
 
             Spacer()
         }
-        .padding(30)
+        .padding(15)
         .padding(.top, 30)
     }
 
@@ -79,3 +79,7 @@ struct AuthView: View {
         }
     }
 }
+
+#Preview {
+    AuthView(isLoggedIn: .constant(false)
+)}
