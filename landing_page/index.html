@@ -23,6 +23,7 @@
         <a href="#hero" class="hover:text-[#2397FF] transition">Accueil</a>
         <a href="#features" class="hover:text-[#2397FF] transition">Fonctionnalités</a>
         <a href="#pro" class="hover:text-[#2397FF] transition">Pourquoi IAKOA</a>
+        <a href="#download" class="hover:text-[#2397FF] transition">Téléchargement</a>
         <a href="#footer" class="hover:text-[#2397FF] transition">Contact</a>
       </nav>
       <button id="menuToggle" class="block md:hidden text-gray-700 focus:outline-none">
@@ -35,11 +36,12 @@
 
   <!-- Mobile Navigation Menu -->
   <nav id="mobileMenu"
-    class="hidden fixed top-[60px] left-0 w-full bg-white shadow-lg flex flex-col space-y-4 text-gray-700 font-medium px-6 py-4 z-40"
+    class="hidden fixed top-[60px] left-0 w-full bg-white shadow-lg flex flex-col space-y-1 text-gray-700 font-medium px-6 py-4 z-40"
     data-aos="fade-left" data-aos-delay="200">
     <a href="#hero" class="hover:text-[#2397FF] transition">Accueil</a>
     <a href="#features" class="hover:text-[#2397FF] transition">Fonctionnalités</a>
     <a href="#pro" class="hover:text-[#2397FF] transition">Pourquoi IAKOA</a>
+    <a href="#download" class="hover:text-[#2397FF] transition">Téléchargement</a>
     <a href="#footer" class="hover:text-[#2397FF] transition">Contact</a>
   </nav>
 
@@ -97,8 +99,8 @@
         <img src="images/mockupempty.png" alt="Aperçu IAKOA"
           class="w-full h-auto drop-shadow-xl pointer-events-none select-none" />
         <div class="absolute inset-0 p-[5%]">
-          <video autoplay loop muted playsinline class="w-full h-full object-cover rounded-[36px]">
-            <source src="images/researchHome.MP4" type="video/mp4" />
+          <video autoplay loop muted playsinline class="w-full h-full object-cover rounded-[37px]">
+            <source src="images/iakoavideo.MP4" type="video/mp4" />
             Votre navigateur ne supporte pas la vidéo.
           </video>
         </div>
@@ -145,19 +147,49 @@
     </div>
   </section>
 
+  <!-- Download Section -->
+  <section id="download"
+    class="bg-white min-h-[700px] md:h-screen bg-gray-100 flex flex-col items-center justify-center px-6 relative overflow-hidden space-y-8">
+
+    <div class="flex flex-col items-center justify-center h-auto md:h-full w-full max-w-7xl mx-auto space-y-6">
+
+      <div class="w-full text-center p-4 md:p-10" data-aos="fade-right">
+        <img src="images/logo-iakoa.svg" alt="Logo IAKOA" class="mx-auto w-60 md:w-80 h-auto mb-4 drop-shadow-xl"
+          data-aos="zoom-in" data-aos-delay="100" />
+        <h2 class="text-6xl text-gray-600 mb-4 pt-6" data-aos="fade-down">
+          Disponible sur l'App Store
+        </h2>
+        <div class="flex justify-center space-x-6 mt-6" data-aos="flip-left" data-aos-delay="400">
+          <a href="https://github.com/vlldnt/Portfolio-IAKOA">
+            <img src="images/appledownload.png" alt="Logo IAKOA" class="h-40 w-auto drop-shadow-lg"
+              data-aos="zoom-in-up" data-aos-delay="300" />
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="absolute bottom-6 left-1/2 transform -translate-x-1/2 z-30"
+      style="opacity:1 !important; visibility:visible !important;" data-aos="fade-up" data-aos-delay="700">
+
+      <button onclick="window.location.hash = '#footer';"
+        class="bg-white rounded-full shadow-lg p-3 hover:bg-gray-200 transition" data-aos="zoom-out"
+        data-aos-delay="800">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-700" fill="none" viewBox="0 0 24 24"
+          stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+        </svg>
+      </button>
+    </div>
+  </section>
+
+
   <!-- Footer -->
   <footer id="footer" class="bg-[#2397FF] text-white py-6 px-6" data-aos="fade-up">
     <div class="max-w-5xl mx-auto text-center space-y-6" data-aos="fade-up" data-aos-delay="100">
-      <h3 class="text-xl font-semibold">Téléchargez l’application IAKOA</h3>
-      <a href="https://github.com/vlldnt/Portfolio-IAKOA/tree/main"
-        class="inline-block bg-white text-[#2397FF] font-bold py-2 px-5 rounded-lg shadow hover:bg-gray-200 transition flex items-center justify-center space-x-2 max-w-xs mx-auto">
-        <img src="images/appstore.svg" alt="App Store" class="h-6 w-6" />
-        <span>IAKOA sur l’App Store</span>
-      </a>
-
       <div class="mt-8">
         <h4 class="text-lg font-semibold mb-4">Contactez-nous</h4>
-        <form action="https://formspree.io/f/xzzgqqkv" method="POST" class="space-y-6 max-w-md mx-auto text-left">
+        <form action="https://formspree.io/f/xzzgqqkv" method="POST"
+          class="space-y-6 max-w-md md:max-w-lg mx-auto text-left w-full px-4">
           <div class="relative">
             <input type="text" name="name" required
               class="peer w-full px-4 pt-6 pb-2 text-black rounded-lg placeholder-transparent focus:outline-none focus:ring-2 focus:ring-white"
@@ -236,8 +268,6 @@
           </div>
         </a>
       </div>
-
-
       <p class="text-sm text-blue-200 mt-4">© 2025 IAKOA. Tous droits réservés.</p>
     </div>
   </footer>
