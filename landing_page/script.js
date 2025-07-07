@@ -33,8 +33,22 @@ function scrollToSectionPro() {
   }
 }
 
-const menuToggle = document.getElementById("menuToggle");
-const menu = document.getElementById("menu");
-menuToggle.addEventListener("click", () => {
-  menu.classList.toggle("hidden");
+document.addEventListener("DOMContentLoaded", () => {
+  const menuToggle = document.getElementById("menuToggle");
+  const mobileMenu = document.getElementById("mobileMenu");
+  const menu = document.getElementById("menu");
+
+  menuToggle.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+    menu.classList.add("hidden");
+  });
+
+  window.addEventListener("resize", () => {
+    if (window.innerWidth >= 768) {
+      menu.classList.remove("hidden");
+      mobileMenu.classList.add("hidden");
+    } else {
+      menu.classList.add("hidden");
+    }
+  });
 });
