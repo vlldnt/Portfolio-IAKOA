@@ -3,11 +3,11 @@ AOS.init({
   once: false,
 });
 
-window.addEventListener('DOMContentLoaded', () => {
-  const header = document.getElementById('mainHeader');
+window.addEventListener("DOMContentLoaded", () => {
+  const header = document.getElementById("mainHeader");
   setTimeout(() => {
-    header.classList.remove('opacity-0', '-translate-y-8');
-    header.classList.add('opacity-100', 'translate-y-0');
+    header.classList.remove("opacity-0", "-translate-y-8");
+    header.classList.add("opacity-100", "translate-y-0");
   }, 200);
 });
 
@@ -33,5 +33,8 @@ function scrollToSectionPro() {
   }
 }
 
-
-
+const menuToggle = document.getElementById("menuToggle");
+const menu = document.getElementById("menu");
+menuToggle.addEventListener("click", () => {
+  menu.classList.toggle("hidden");
+});
