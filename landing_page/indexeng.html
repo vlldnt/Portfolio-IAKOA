@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>IAKOA - So Much to Do, All Around You</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <link rel="icon" href="images/icon-iakoa.svg" type="image/svg+xml">
+</head>
+
+<body class="bg-white text-gray-800">
+
+  <!-- Header -->
+  <header id="mainHeader" class="fixed top-0 left-0 w-full bg-white shadow z-50 transition-transform duration-500"
+    data-aos="fade-down">
+    <div class="max-w-5xl mx-auto flex items-center justify-between px-6 py-4">
+      <img src="images/logo-iakoa.svg" alt="Logo IAKOA" class="h-10 md:h-12" data-aos="fade-right" />
+      <nav id="menu" class="hidden md:flex flex-row space-x-6 text-gray-700 font-medium">
+        <a href="#hero" class="hover:text-[#2397FF] transition">Home</a>
+        <a href="#features" class="hover:text-[#2397FF] transition">Features</a>
+        <a href="#pro" class="hover:text-[#2397FF] transition">Why IAKOA</a>
+        <a href="#download" class="hover:text-[#2397FF] transition">Download</a>
+        <a href="#footer" class="hover:text-[#2397FF] transition">Contact</a>
+      </nav>
+      <button id="menuToggle" class="block md:hidden text-gray-700 focus:outline-none">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Menu -->
+  <nav id="mobileMenu"
+    class="hidden fixed top-[60px] left-0 w-full bg-white shadow-lg flex flex-col space-y-1 text-gray-700 font-medium px-6 py-4 z-40"
+    data-aos="fade-left" data-aos-delay="200">
+    <a href="#hero" class="hover:text-[#2397FF] transition">Home</a>
+    <a href="#features" class="hover:text-[#2397FF] transition">Features</a>
+    <a href="#pro" class="hover:text-[#2397FF] transition">>Why IAKOA</a>
+    <a href="#download" class="hover:text-[#2397FF] transition">Download</a>
+    <a href="#footer" class="hover:text-[#2397FF] transition">Contact</a>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero"
+    class="relative min-h-[700px] md:h-screen bg-gray-100 flex items-center justify-center overflow-hidden px-6">
+    <div
+      class="w-full max-w-6xl h-full flex flex-col md:flex-row items-center justify-between px-4 md:px-10 relative overflow-hidden">
+      <div id="hero-image" class="w-full md:w-1/2 flex items-center justify-center z-20 mb-8 md:mb-0"
+        data-aos="zoom-in-right">
+        <img src="images/tripiphone.png" alt="Aperçu IAKOA"
+          class="w-full max-w-[600px] md:w-[250%] h-auto object-contain drop-shadow-xl select-none pointer-events-none transition-all duration-1000 ease-out"
+          id="hero-img" />
+      </div>
+      <div id="hero-text"
+        class="w-full md:w-1/2 flex flex-col items-end md:items-end justify-center space-y-6 pr-0 md:pr-6 opacity-0 translate-x-10 transition-all duration-1000 ease-out z-10"
+        data-aos="fade-left" data-aos-delay="300">
+        <img src="images/logo-iakoa.svg" alt="Logo IAKOA" class="w-60 md:w-80 h-auto mb-4" />
+        <p id="herotext"
+          class="text-gray-800 text-3xl md:text-6xl font-extrabold leading-tight text-center md:text-right">
+        SO MUCH TO DO<br>ALL AROUND YOU
+        </p>
+      </div>
+    </div>
+    <div class="absolute bottom-6 left-1/2 transform -translate-x-1/2 z-30"
+      style="opacity:1 !important; visibility:visible !important;" data-aos="fade-up" data-aos-delay="600">
+      <button onclick="scrollToSectionFeatures()" class="bg-white rounded-full shadow-lg p-3 hover:bg-gray-200">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-700" fill="none" viewBox="0 0 24 24"
+          stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+        </svg>
+      </button>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features"
+    class="min-h-[700px] md:h-screen bg-white flex flex-col items-center justify-center px-6 relative overflow-hidden">
+    <div
+      class="flex flex-col md:flex-row items-center justify-center h-auto md:h-2/3 w-full max-w-6xl mx-auto p-4 md:p-10">
+      <div class="w-full md:w-1/2 mb-10 md:mb-0" data-aos="fade-right">
+        <h2 class="text-6xl font-extrabold mb-4">Explore nearby events</h2>
+        <p class="text-gray-600 mb-4">
+          IAKOA offers you a personalized selection of cultural, sports, and community events near you.
+        </p>
+        <ul class="list-disc list-inside text-gray-600">
+          <li data-aos="fade-up" data-aos-delay="100">Locate-based </li>
+          <li data-aos="fade-up" data-aos-delay="200">Real-time suggestions</li>
+          <li data-aos="fade-up" data-aos-delay="300">70 different categories</li>
+        </ul>
+      </div>
+      <div class="relative w-full md:w-1/2 flex items-center justify-center" style="max-width: 280px;"
+        data-aos="zoom-in-left" data-aos-delay="400">
+        <img src="images/mockupempty.png" alt="Aperçu IAKOA"
+          class="w-full h-auto drop-shadow-xl pointer-events-none select-none" />
+        <div class="absolute inset-0 p-[5%]">
+          <video autoplay loop muted playsinline class="w-full h-full object-cover rounded-[37px]">
+            <source src="images/iakoavideo.MP4" type="video/mp4" />
+            Your browser does not support this video.
+          </video>
+        </div>
+      </div>
+    </div>
+    <div class="absolute bottom-6 left-1/2 transform -translate-x-1/2 z-30"
+      style="opacity:1 !important; visibility:visible !important;" data-aos="fade-up" data-aos-delay="600">
+      <button onclick="window.location.hash = '#pro';"
+        class="bg-white rounded-full shadow-lg p-3 hover:bg-gray-200 transition">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-700" fill="none" viewBox="0 0 24 24"
+          stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+        </svg>
+      </button>
+    </div>
+  </section>
+
+  <!-- Fade transition features -> pro -->
+  <div
+    style="height:48px; margin-top:-24px; margin-bottom:-24px; background:linear-gradient(to bottom, #fff 0%, #f3f4f6 100%);">
+  </div>
+
+  <!-- Pro Section -->
+  <section id="pro"
+    class="min-h-[700px] md:h-screen bg-gray-100 flex flex-col items-center justify-center px-6 relative overflow-hidden">
+    <div class="flex flex-col md:flex-row items-center justify-center h-auto md:h-full w-full max-w-7xl mx-auto">
+      <div class="w-full md:w-1/2 mb-10 md:mb-0 md:order-2 p-4 md:p-10" data-aos="fade-left">
+        <h2 class="text-6xl font-extrabold mb-4">Why choose IAKOA?</h2>
+        <p class="text-gray-600 mb-4">
+          As a professional, create your own events in over 70 categories, increase your visibility, and enjoy a fast and easy-to-use platform.
+        </p>
+        <ul class="list-disc list-inside text-gray-600">
+          <li data-aos="fade-up" data-aos-delay="100">Event creation simplified</li>
+          <li data-aos="fade-up" data-aos-delay="200">Increased visibility for your events</li>
+          <li data-aos="fade-up" data-aos-delay="300">Fast and intuitive interface</li>
+        </ul>
+      </div>
+      <div class="relative w-full md:w-1/2 flex items-center justify-center" style="max-width: 1000px;"
+        data-aos="zoom-in-right" data-aos-delay="400">
+        <img src="images/toulousePins.png" alt="Aperçu IAKOA"
+          class="w-full h-auto drop-shadow-xl pointer-events-none select-none" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Download Section -->
+  <section id="download"
+    class="bg-white min-h-[700px] md:h-screen bg-gray-100 flex flex-col items-center justify-center px-6 relative overflow-hidden space-y-8">
+
+    <div class="flex flex-col items-center justify-center h-auto md:h-full w-full max-w-7xl mx-auto space-y-6">
+
+      <div class="w-full text-center p-4 md:p-10" data-aos="fade-right">
+        <img src="images/logo-iakoa.svg" alt="Logo IAKOA" class="mx-auto w-60 md:w-80 h-auto mb-4 drop-shadow-xl"
+          data-aos="zoom-in" data-aos-delay="100" />
+        <h2 class="text-6xl text-gray-600 mb-4 pt-6" data-aos="fade-down">
+          Available on App Store
+        </h2>
+        <div class="flex justify-center space-x-6 mt-6" data-aos="flip-left" data-aos-delay="400">
+          <a href="https://github.com/vlldnt/Portfolio-IAKOA">
+            <img src="images/appledownload.png" alt="Logo IAKOA" class="h-40 w-auto drop-shadow-lg"
+              data-aos="zoom-in-up" data-aos-delay="300" />
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="absolute bottom-6 left-1/2 transform -translate-x-1/2 z-30"
+      style="opacity:1 !important; visibility:visible !important;" data-aos="fade-up" data-aos-delay="700">
+
+      <button onclick="window.location.hash = '#footer';"
+        class="bg-white rounded-full shadow-lg p-3 hover:bg-gray-200 transition" data-aos="zoom-out"
+        data-aos-delay="800">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-700" fill="none" viewBox="0 0 24 24"
+          stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+        </svg>
+      </button>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer id="footer" class="bg-[#2397FF] text-white py-6 px-6" data-aos="fade-up">
+    <div class="max-w-5xl mx-auto text-center space-y-6" data-aos="fade-up" data-aos-delay="100">
+      <div class="mt-8">
+        <h4 class="text-lg font-semibold mb-4">Contact us</h4>
+        <form action="https://formspree.io/f/xzzgqqkv" method="POST"
+          class="space-y-6 max-w-md md:max-w-lg mx-auto text-left w-full px-4">
+          <div class="relative">
+            <input type="text" name="name" required
+              class="peer w-full px-4 pt-6 pb-2 text-black rounded-lg placeholder-transparent focus:outline-none focus:ring-2 focus:ring-white"
+              placeholder="Votre nom" />
+            <label for="name" class="absolute left-4 top-2 text-white text-sm transition-all duration-200 ease-in-out 
+               peer-placeholder-shown:top-4 peer-placeholder-shown:text-base 
+               peer-placeholder-shown:text-gray-300 peer-focus:top-2 peer-focus:text-sm peer-focus:text-white">
+              Name
+            </label>
+          </div>
+
+          <div class="relative">
+            <input type="email" name="_replyto" required
+              class="peer w-full px-4 pt-6 pb-2 text-black rounded-lg placeholder-transparent focus:outline-none focus:ring-2 focus:ring-white"
+              placeholder="Votre email" />
+            <label for="email" class="absolute left-4 top-2 text-white text-sm transition-all duration-200 ease-in-out 
+               peer-placeholder-shown:top-4 peer-placeholder-shown:text-base 
+               peer-placeholder-shown:text-gray-300 peer-focus:top-2 peer-focus:text-sm peer-focus:text-white">
+              Email
+            </label>
+          </div>
+
+          <div class="relative">
+            <textarea name="message" rows="4" required
+              class="peer w-full px-4 pt-6 pb-2 text-black rounded-lg placeholder-transparent focus:outline-none focus:ring-2 focus:ring-white"
+              placeholder="Votre message"></textarea>
+            <label for="message" class="absolute left-4 top-2 text-white text-sm transition-all duration-200 ease-in-out 
+               peer-placeholder-shown:top-4 peer-placeholder-shown:text-base 
+               peer-placeholder-shown:text-gray-300 peer-focus:top-2 peer-focus:text-sm peer-focus:text-white">
+              Message
+            </label>
+          </div>
+
+          <input type="hidden" name="_redirect" value="https://vieilledent.eu/iakoa" />
+
+          <button type="submit"
+            class="bg-white text-[#2397FF] font-bold py-2 px-6 rounded-lg shadow hover:bg-gray-200 transition">
+            Send
+          </button>
+        </form>
+      </div>
+
+      <div class="flex justify-center space-x-6 mt-6">
+        <!-- Github link -->
+        <a href="https://github.com/vlldnt/" class="group flex items-center">
+          <img src="images/github.svg" alt="Github"
+            class="h-8 w-8 transition-transform duration-500 group-hover:-translate-x-3 pr-1" />
+          <div class="overflow-hidden max-w-0 group-hover:max-w-[100px] transition-[max-width] duration-500 ease-out">
+            <span
+              class="inline-block opacity-0 translate-x-[-10px] group-hover:translate-x-0 group-hover:opacity-100 transition-all duration-500 ease-out pl-2 whitespace-nowrap">
+              Github
+            </span>
+          </div>
+        </a>
+
+        <!-- LinkedIn link -->
+        <a href="https://www.linkedin.com/in/adrien-vieilledent-791b39346/" class="group flex items-center">
+          <img src="images/linkedinwhite.svg" alt="LinkedIn" class="h-8 w-8 transition-transform duration-500 pr-1" />
+          <div class="overflow-hidden max-w-0 group-hover:max-w-[150px] transition-[max-width] duration-500 ease-out">
+            <span
+              class="inline-block opacity-0 translate-x-3 group-hover:translate-x-0 group-hover:opacity-100 transition-all duration-500 ease-out pl-2 whitespace-nowrap">
+              LinkedIn
+            </span>
+          </div>
+        </a>
+
+        <!-- vieilledent.eu link -->
+        <a href="https://www.linkedin.com/in/adrien-vieilledent-791b39346/" class="group flex items-center">
+          <img src="images/teethwhite.svg" alt="vieilledent.eu"
+            class="h-8 w-8 transition-transform duration-500 pr-1" />
+          <div class="overflow-hidden max-w-0 group-hover:max-w-[150px] transition-[max-width] duration-500 ease-out">
+            <span
+              class="inline-block opacity-0 translate-x-3 group-hover:translate-x-0 group-hover:opacity-100 transition-all duration-500 ease-out pl-2 whitespace-nowrap">
+              vieilledent.eu
+            </span>
+          </div>
+        </a>
+      </div>
+      <p class="text-sm text-blue-200 mt-4">© 2025 IAKOA. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
